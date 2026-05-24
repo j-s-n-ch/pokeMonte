@@ -15,6 +15,31 @@ const PokemonIcon = React.memo(
 		size: number;
 	}) => {
 		const appConfig = React.useContext(AppConfigContext);
+		const [imgError, setImgError] = React.useState(false);
+
+		// biome-ignore lint/correctness/useExhaustiveDependencies: resets imgError state when idForm changes
+		React.useEffect(() => {
+			setImgError(false);
+		}, [idForm]);
+
+		if (!imgError && !appConfig.iconUrl) {
+			const localUrl = `/images/pokemon/icons/${idForm}.webp`;
+			return (
+				<StyledIconContainer
+					style={{ width: `${size}px`, height: `${size}px` }}
+				>
+					<img
+						src={localUrl}
+						width={size}
+						height={size}
+						alt={idForm.toString()}
+						onError={() => setImgError(true)}
+						style={{ objectFit: "contain", display: "block" }}
+					/>
+				</StyledIconContainer>
+			);
+		}
+
 		if (appConfig.iconUrl?.match(/^https?:\/\//)) {
 			let url = appConfig.iconUrl;
 			const id = PokemonIv.getIdByIdForm(idForm);
