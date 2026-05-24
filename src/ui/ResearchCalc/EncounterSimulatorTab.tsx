@@ -1,9 +1,7 @@
 import AddIcon from "@mui/icons-material/Add";
-import DeleteIcon from "@mui/icons-material/Delete";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import {
-	Autocomplete,
 	Box,
 	Button,
 	Checkbox,
@@ -25,7 +23,8 @@ import {
 	Typography,
 } from "@mui/material";
 import { styled } from "@mui/system";
-import { useCallback, useMemo, useState } from "react";
+import type React from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import fields from "../../data/fields";
 import pokemons from "../../data/pokemons";
 import {
@@ -198,22 +197,153 @@ function HuntFinderRow({
 	);
 }
 
+function PrioritySlider({
+	value,
+	onChange,
+}: {
+	value: number;
+	onChange: (val: number) => void;
+}) {
+	const handleKeyDown = (e: React.KeyboardEvent) => {
+		if (e.key === "ArrowLeft") {
+			onChange(Math.max(1, value - 1));
+			e.preventDefault();
+		} else if (e.key === "ArrowRight") {
+			onChange(Math.min(5, value + 1));
+			e.preventDefault();
+		}
+	};
+
+	return (
+		<Box
+			className="slider-root"
+			tabIndex={0}
+			onKeyDown={handleKeyDown}
+			sx={{
+				position: "relative",
+				width: "160px",
+				mx: "15px",
+				my: "10px",
+				outline: "none",
+				cursor: "pointer",
+				display: "inline-block",
+				"&:focus .slider-thumb": {
+					boxShadow: "0 0 0 6px rgba(144, 202, 249, 0.24)",
+					borderColor: "primary.main",
+				},
+			}}
+		>
+			{/* Track Line */}
+			<Box
+				sx={{
+					position: "absolute",
+					top: "6px",
+					left: 0,
+					right: 0,
+					height: "4px",
+					bgcolor: "rgba(255, 255, 255, 0.2)",
+					borderRadius: "2px",
+				}}
+			/>
+			{/* 5 Dots representing segments */}
+			{[1, 2, 3, 4, 5].map((val) => {
+				const leftPercent = `${(val - 1) * 25}%`;
+				return (
+					<Box
+						key={val}
+						onClick={() => onChange(val)}
+						sx={{
+							position: "absolute",
+							top: "2px",
+							left: leftPercent,
+							transform: "translateX(-50%)",
+							width: "12px",
+							height: "12px",
+							borderRadius: "50%",
+							bgcolor:
+								val <= value ? "primary.main" : "rgba(255, 255, 255, 0.4)",
+							transition: "background-color 0.15s ease",
+							"&:hover": {
+								bgcolor: "primary.light",
+							},
+						}}
+					/>
+				);
+			})}
+			{/* Slider Thumb */}
+			<Box
+				className="slider-thumb"
+				sx={{
+					position: "absolute",
+					top: "-1px",
+					left: `${(value - 1) * 25}%`,
+					transform: "translateX(-50%)",
+					width: "18px",
+					height: "18px",
+					borderRadius: "50%",
+					bgcolor: "primary.main",
+					border: "2px solid #fff",
+					transition: "left 0.15s ease",
+					boxShadow: "0px 2px 4px rgba(0,0,0,0.4)",
+				}}
+			/>
+			{/* Endpoint Labels */}
+			<Box
+				sx={{
+					display: "flex",
+					justifyContent: "space-between",
+					mt: "24px",
+					userSelect: "none",
+				}}
+			>
+				<Typography
+					variant="caption"
+					sx={{ color: "text.secondary", transform: "translateX(-10px)" }}
+				>
+					1 (Low)
+				</Typography>
+				<Typography
+					variant="caption"
+					sx={{ color: "text.secondary", transform: "translateX(10px)" }}
+				>
+					5 (High)
+				</Typography>
+			</Box>
+		</Box>
+	);
+}
+
 export default function EncounterSimulatorTab() {
 	// Standard inputs
-	const [fieldIndex, setFieldIndex] = useState<number>(0);
+	const [fieldIndex, setFieldIndex] = useState<number>(() => {
+		const cached = localStorage.getItem("pokesleep_sim_fieldIndex");
+		return cached !== null ? Number(cached) : 0;
+	});
 	const [sleepType, setSleepType] = useState<
 		"dozing" | "snoozing" | "slumbering"
 	>("dozing");
-	const [snorlaxPower, setSnorlaxPower] = useState<number>(200000);
+	const [snorlaxPower, setSnorlaxPower] = useState<number>(() => {
+		const cached = localStorage.getItem("pokesleep_sim_snorlaxPower");
+		return cached !== null ? Number(cached) : 200000;
+	});
 	const [bonus, setBonus] = useState<number>(1.0);
 	const [sleepTwice, setSleepTwice] = useState<boolean>(false);
 	const [firstScore, setFirstScore] = useState<number>(70);
 
 	// Snorlax expected strength profile per day of the week (Mon-Sun)
 	const [dailyStrengths, setDailyStrengths] = useState<number[]>(() => {
+		const cached = localStorage.getItem("pokesleep_sim_dailyStrengths");
+		if (cached !== null) {
+			try {
+				return JSON.parse(cached);
+			} catch {}
+		}
 		return [1, 2, 3, 4, 5, 6, 7].map((n) => 200000 * n);
 	});
-	const [averageStrength, setAverageStrength] = useState<number>(200000);
+	const [averageStrength, setAverageStrength] = useState<number>(() => {
+		const cached = localStorage.getItem("pokesleep_sim_averageStrength");
+		return cached !== null ? Number(cached) : 200000;
+	});
 
 	const handleAverageStrengthChange = useCallback((val: number) => {
 		setAverageStrength(val);
@@ -240,14 +370,128 @@ export default function EncounterSimulatorTab() {
 	);
 
 	// Targets state
-	const [targets, setTargets] = useState<TargetPokemon[]>([
-		{ pokemon: "Bulbasaur", catchPriority: 5 },
-		{ pokemon: "Pikachu", catchPriority: 3 },
-	]);
+	const [targets, setTargets] = useState<TargetPokemon[]>(() => {
+		const cached = localStorage.getItem("pokesleep_sim_targets");
+		if (cached !== null) {
+			try {
+				return JSON.parse(cached);
+			} catch {}
+		}
+		return [
+			{ pokemon: "Bulbasaur", catchPriority: 5 },
+			{ pokemon: "Pikachu", catchPriority: 3 },
+		];
+	});
 	const [selectedPokemonName, setSelectedPokemonName] = useState<string | null>(
 		null,
 	);
 	const [selectedPriority, setSelectedPriority] = useState<number>(3);
+
+	const pokemonOptions = useMemo(() => {
+		const names = pokemons.map((p) => p.name);
+		return Array.from(new Set(names)).sort();
+	}, []);
+
+	// Keyboard Autocomplete and Priority Slider States
+	const [searchQuery, setSearchQuery] = useState<string>("");
+	const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
+	const [highlightedIdx, setHighlightedIdx] = useState<number>(-1);
+
+	useEffect(() => {
+		localStorage.setItem("pokesleep_sim_fieldIndex", String(fieldIndex));
+	}, [fieldIndex]);
+
+	useEffect(() => {
+		localStorage.setItem("pokesleep_sim_snorlaxPower", String(snorlaxPower));
+	}, [snorlaxPower]);
+
+	useEffect(() => {
+		localStorage.setItem(
+			"pokesleep_sim_averageStrength",
+			String(averageStrength),
+		);
+	}, [averageStrength]);
+
+	useEffect(() => {
+		localStorage.setItem(
+			"pokesleep_sim_dailyStrengths",
+			JSON.stringify(dailyStrengths),
+		);
+	}, [dailyStrengths]);
+
+	useEffect(() => {
+		localStorage.setItem("pokesleep_sim_targets", JSON.stringify(targets));
+	}, [targets]);
+
+	const filteredOptions = useMemo(() => {
+		if (!searchQuery) return [];
+		return pokemonOptions
+			.filter((name) => name.toLowerCase().includes(searchQuery.toLowerCase()))
+			.slice(0, 5);
+	}, [searchQuery, pokemonOptions]);
+
+	const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+		if (e.key === "ArrowDown") {
+			e.preventDefault();
+			if (filteredOptions.length > 0) {
+				setDropdownOpen(true);
+				if (highlightedIdx === -1) {
+					setHighlightedIdx(filteredOptions.length > 1 ? 1 : 0);
+				} else {
+					setHighlightedIdx((highlightedIdx + 1) % filteredOptions.length);
+				}
+			}
+		} else if (e.key === "ArrowUp") {
+			e.preventDefault();
+			if (filteredOptions.length > 0) {
+				setDropdownOpen(true);
+				if (highlightedIdx === -1) {
+					setHighlightedIdx(filteredOptions.length - 1);
+				} else {
+					setHighlightedIdx(
+						(highlightedIdx - 1 + filteredOptions.length) %
+							filteredOptions.length,
+					);
+				}
+			}
+		} else if (e.key === "Enter") {
+			e.preventDefault();
+			if (filteredOptions.length === 1) {
+				const pokemonName = filteredOptions[0];
+				if (
+					!targets.some(
+						(t) => t.pokemon.toLowerCase() === pokemonName.toLowerCase(),
+					)
+				) {
+					setTargets((prev) => [
+						...prev,
+						{ pokemon: pokemonName, catchPriority: selectedPriority },
+					]);
+				}
+				setSearchQuery("");
+				setSelectedPokemonName(null);
+				setDropdownOpen(false);
+				setHighlightedIdx(-1);
+			} else if (filteredOptions.length > 1) {
+				const targetIdx = highlightedIdx !== -1 ? highlightedIdx : 0;
+				const pokemonName = filteredOptions[targetIdx];
+				setSelectedPokemonName(pokemonName);
+				setSearchQuery(pokemonName);
+				setDropdownOpen(false);
+				setHighlightedIdx(-1);
+			}
+		} else if (e.key === "Escape") {
+			setDropdownOpen(false);
+			setHighlightedIdx(-1);
+		}
+	};
+
+	const handleSelectOption = (option: string) => {
+		setSelectedPokemonName(option);
+		setSearchQuery(option);
+		setDropdownOpen(false);
+		setHighlightedIdx(-1);
+	};
 
 	// Tabs state
 	const [activeTab, setActiveTab] = useState<number>(0);
@@ -266,11 +510,6 @@ export default function EncounterSimulatorTab() {
 
 	const [isSimulating, setIsSimulating] = useState<boolean>(false);
 	const [simTimeMs, setSimTimeMs] = useState<number | null>(null);
-
-	const pokemonOptions = useMemo(() => {
-		const names = pokemons.map((p) => p.name);
-		return Array.from(new Set(names)).sort();
-	}, []);
 
 	// Active rank data
 	const field = useMemo(() => fields[fieldIndex], [fieldIndex]);
@@ -309,6 +548,7 @@ export default function EncounterSimulatorTab() {
 			{ pokemon: selectedPokemonName, catchPriority: selectedPriority },
 		]);
 		setSelectedPokemonName(null);
+		setSearchQuery("");
 	}, [selectedPokemonName, selectedPriority, targets]);
 
 	const handleRemoveTarget = useCallback(
@@ -560,60 +800,247 @@ export default function EncounterSimulatorTab() {
 					alignItems: "center",
 				}}
 			>
-				<Autocomplete
-					size="small"
-					options={pokemonOptions}
-					value={selectedPokemonName}
-					onChange={(_e, v) => setSelectedPokemonName(v)}
-					renderInput={(params) => (
-						<TextField
-							{...params}
-							variant="standard"
-							placeholder="Pokemon..."
-							sx={{ width: "200px" }}
-						/>
+				{/* Custom Search Autocomplete */}
+				<Box sx={{ position: "relative", width: "200px" }}>
+					<TextField
+						variant="standard"
+						placeholder="Pokemon..."
+						value={searchQuery}
+						onChange={(e) => {
+							setSearchQuery(e.target.value);
+							setDropdownOpen(true);
+							setHighlightedIdx(-1);
+						}}
+						onFocus={() => setDropdownOpen(true)}
+						onBlur={() => {
+							setTimeout(() => {
+								setDropdownOpen(false);
+								setHighlightedIdx(-1);
+							}, 150);
+						}}
+						onKeyDown={handleInputKeyDown}
+						fullWidth
+					/>
+					{dropdownOpen && filteredOptions.length > 0 && (
+						<Box
+							sx={{
+								position: "absolute",
+								top: "100%",
+								left: 0,
+								right: 0,
+								bgcolor: "background.paper",
+								boxShadow: 3,
+								borderRadius: "4px",
+								zIndex: 10,
+								maxHeight: "220px",
+								overflowY: "auto",
+								border: "1px solid rgba(255, 255, 255, 0.1)",
+								mt: "2px",
+							}}
+						>
+							{filteredOptions.map((option, index) => {
+								const isHighlighted = index === highlightedIdx;
+								return (
+									<Box
+										key={option}
+										onMouseDown={() => handleSelectOption(option)}
+										onMouseEnter={() => setHighlightedIdx(index)}
+										sx={{
+											display: "flex",
+											alignItems: "center",
+											gap: "10px",
+											p: "8px 12px",
+											cursor: "pointer",
+											bgcolor: isHighlighted
+												? "rgba(255, 255, 255, 0.08)"
+												: "transparent",
+											"&:hover": {
+												bgcolor: "rgba(255, 255, 255, 0.08)",
+											},
+										}}
+									>
+										<PokemonIcon idForm={getPokemonIdForm(option)} size={20} />
+										<Typography variant="body2">{option}</Typography>
+									</Box>
+								);
+							})}
+						</Box>
 					)}
-				/>
-				<TextField
-					variant="standard"
-					select
+				</Box>
+
+				{/* Custom Priority Slider */}
+				<PrioritySlider
 					value={selectedPriority}
-					onChange={(e) => setSelectedPriority(Number(e.target.value))}
-					sx={{ width: "100px" }}
-				>
-					<MenuItem value={5}>5 (High)</MenuItem>
-					<MenuItem value={4}>4</MenuItem>
-					<MenuItem value={3}>3 (Med)</MenuItem>
-					<MenuItem value={2}>2</MenuItem>
-					<MenuItem value={1}>1 (Low)</MenuItem>
-				</TextField>
+					onChange={setSelectedPriority}
+				/>
+
 				<Button
 					variant="contained"
 					color="primary"
 					size="small"
 					onClick={handleAddTarget}
-					sx={{ minWidth: "40px", height: "30px" }}
+					sx={{ minWidth: "40px", height: "30px", ml: 2 }}
 				>
 					<AddIcon fontSize="small" />
 				</Button>
 			</Box>
 
-			<Box className="targets-container" sx={{ mb: 3 }}>
-				{targets.map((t) => (
-					<Box key={t.pokemon} className="target-pill">
-						<PokemonIcon idForm={getPokemonIdForm(t.pokemon)} size={22} />
-						<Typography variant="body2">
-							{t.pokemon} ({t.catchPriority})
-						</Typography>
-						<IconButton
-							size="small"
-							onClick={() => handleRemoveTarget(t.pokemon)}
-							sx={{ p: 0.2 }}
+			{/* Targets Priority Tier List */}
+			<Box
+				sx={{ display: "flex", flexDirection: "column", gap: "0.5rem", mb: 3 }}
+			>
+				{[5, 4, 3, 2, 1].map((tier) => {
+					const tierColors = {
+						5: "#ff4b4b",
+						4: "#ff8547",
+						3: "#ffc837",
+						2: "#a3e14c",
+						1: "#4cd964",
+					};
+					const tierNames = {
+						5: "5 (High)",
+						4: "4",
+						3: "3 (Med)",
+						2: "2",
+						1: "1 (Low)",
+					};
+					const tierTargets = targets.filter((t) => t.catchPriority === tier);
+
+					return (
+						<Box
+							key={tier}
+							onDragOver={(e) => {
+								e.preventDefault();
+								e.dataTransfer.dropEffect = "move";
+							}}
+							onDrop={(e) => {
+								const pokemonName = e.dataTransfer.getData("pokemonName");
+								if (pokemonName) {
+									setTargets((prev) =>
+										prev.map((t) =>
+											t.pokemon === pokemonName
+												? { ...t, catchPriority: tier }
+												: t,
+										),
+									);
+								}
+							}}
+							sx={{
+								display: "flex",
+								alignItems: "stretch",
+								borderRadius: "6px",
+								overflow: "hidden",
+								background: "rgba(255, 255, 255, 0.02)",
+								border: "1px solid rgba(255, 255, 255, 0.05)",
+							}}
 						>
-							<DeleteIcon fontSize="small" color="error" />
-						</IconButton>
-					</Box>
-				))}
+							{/* Label */}
+							<Box
+								sx={{
+									width: "90px",
+									display: "flex",
+									justifyContent: "center",
+									alignItems: "center",
+									fontWeight: "bold",
+									fontSize: "0.85rem",
+									color: "#000",
+									textAlign: "center",
+									p: "0.5rem",
+									bgcolor: tierColors[tier as keyof typeof tierColors],
+									userSelect: "none",
+								}}
+							>
+								{tierNames[tier as keyof typeof tierNames]}
+							</Box>
+							{/* Drop Zone */}
+							<Box
+								sx={{
+									flexGrow: 1,
+									display: "flex",
+									gap: "1rem",
+									p: "0.5rem 1rem",
+									flexWrap: "wrap",
+									alignItems: "center",
+									minHeight: "56px",
+								}}
+							>
+								{tierTargets.length > 0 ? (
+									tierTargets.map((t) => (
+										<Box
+											key={t.pokemon}
+											draggable
+											onDragStart={(e) => {
+												e.dataTransfer.setData("pokemonName", t.pokemon);
+												e.dataTransfer.effectAllowed = "move";
+											}}
+											onDragEnd={(e) => {
+												if (e.dataTransfer.dropEffect === "none") {
+													handleRemoveTarget(t.pokemon);
+												}
+											}}
+											sx={{
+												position: "relative",
+												cursor: "grab",
+												"&:active": { cursor: "grabbing" },
+												"&:hover .delete-badge": { opacity: 1 },
+											}}
+										>
+											<PokemonIcon
+												idForm={getPokemonIdForm(t.pokemon)}
+												size={40}
+											/>
+											{/* absolute hover delete badge */}
+											<Box
+												className="delete-badge"
+												onClick={(e) => {
+													e.stopPropagation();
+													handleRemoveTarget(t.pokemon);
+												}}
+												sx={{
+													position: "absolute",
+													top: "-4px",
+													right: "-4px",
+													width: "16px",
+													height: "16px",
+													borderRadius: "50%",
+													bgcolor: "#ff4b4b",
+													color: "#fff",
+													display: "flex",
+													alignItems: "center",
+													justifyContent: "center",
+													fontSize: "11px",
+													fontWeight: "bold",
+													cursor: "pointer",
+													boxShadow: "0px 1px 2px rgba(0,0,0,0.5)",
+													userSelect: "none",
+													opacity: 0,
+													transition: "opacity 0.15s ease",
+													zIndex: 2,
+													"&:hover": {
+														bgcolor: "#ff1a1a",
+													},
+												}}
+											>
+												×
+											</Box>
+										</Box>
+									))
+								) : (
+									<Typography
+										variant="body2"
+										sx={{
+											color: "text.secondary",
+											fontStyle: "italic",
+											userSelect: "none",
+										}}
+									>
+										Drag & drop target here
+									</Typography>
+								)}
+							</Box>
+						</Box>
+					);
+				})}
 			</Box>
 
 			{/* Sub tabs */}
