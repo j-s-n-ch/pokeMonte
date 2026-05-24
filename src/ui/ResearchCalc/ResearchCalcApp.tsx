@@ -1,4 +1,6 @@
+import { Box, Tab, Tabs } from "@mui/material";
 import { useCallback, useState } from "react";
+import EncounterSimulatorTab from "./EncounterSimulatorTab";
 import GeneralPanel from "./GeneralPanel";
 import { InputArea } from "./InputArea";
 import NotFixedWarning from "./NotFixedWarning";
@@ -12,6 +14,7 @@ const defaultData = loadConfig();
 
 export default function ResearchCalcApp() {
 	const [data, setData] = useState(defaultData);
+	const [activeTab, setActiveTab] = useState(0);
 
 	const updateState = useCallback(
 		(value: Partial<InputAreaData>) => {
@@ -31,9 +34,27 @@ export default function ResearchCalcApp() {
 
 	return (
 		<div style={{ margin: "0 .5rem" }}>
-			<InputArea data={data} onChange={onChange} />
-			<NotFixedWarning fieldIndex={data.fieldIndex} />
-			<GeneralPanel data={data} />
+			<Box sx={{ borderBottom: 1, borderColor: "divider", mb: 2 }}>
+				<Tabs
+					value={activeTab}
+					onChange={(_e, v) => setActiveTab(v)}
+					textColor="primary"
+					indicatorColor="primary"
+				>
+					<Tab label="SLEEP TRACKER" />
+					<Tab label="ENCOUNTER SIMULATOR" />
+				</Tabs>
+			</Box>
+
+			{activeTab === 0 ? (
+				<>
+					<InputArea data={data} onChange={onChange} />
+					<NotFixedWarning fieldIndex={data.fieldIndex} />
+					<GeneralPanel data={data} />
+				</>
+			) : (
+				<EncounterSimulatorTab />
+			)}
 		</div>
 	);
 }
