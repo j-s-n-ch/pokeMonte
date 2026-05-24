@@ -1,0 +1,6858 @@
+[
+	{
+		"pokemon": "Bulbasaur",
+		"style": 1,
+		"dpr": 418000,
+		"sleepType": "dozing",
+		"unlockRank": "B2",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Bulbasaur",
+		"style": 2,
+		"dpr": 2812000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Bulbasaur",
+		"style": 3,
+		"dpr": 9918000,
+		"sleepType": "dozing",
+		"unlockRank": "G2",
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Bulbasaur",
+		"style": 4,
+		"dpr": 13490000,
+		"sleepType": "dozing",
+		"unlockRank": "G4",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Ivysaur",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "dozing",
+		"unlockRank": "U3",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Ivysaur",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": "U4",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Ivysaur",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "dozing",
+		"unlockRank": "M5",
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Ivysaur",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "dozing",
+		"unlockRank": "M9",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Venusaur",
+		"style": 1,
+		"dpr": 14326000,
+		"sleepType": "dozing",
+		"unlockRank": "M15",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Venusaur",
+		"style": 2,
+		"dpr": 28766000,
+		"sleepType": "dozing",
+		"unlockRank": "M10",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Venusaur",
+		"style": 3,
+		"dpr": 62776000,
+		"sleepType": "dozing",
+		"unlockRank": "B2",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Venusaur",
+		"style": 4,
+		"dpr": 77102000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Charmander",
+		"style": 1,
+		"dpr": 418000,
+		"sleepType": "snoozing",
+		"unlockRank": "G2",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Charmander",
+		"style": 2,
+		"dpr": 2812000,
+		"sleepType": "snoozing",
+		"unlockRank": "G4",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Charmander",
+		"style": 3,
+		"dpr": 9918000,
+		"sleepType": "snoozing",
+		"unlockRank": "U3",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Charmander",
+		"style": 4,
+		"dpr": 13490000,
+		"sleepType": "snoozing",
+		"unlockRank": "U4",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Charmeleon",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "snoozing",
+		"unlockRank": "M5",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Charmeleon",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "snoozing",
+		"unlockRank": "M9",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Charmeleon",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "snoozing",
+		"unlockRank": "M15",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Charmeleon",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "snoozing",
+		"unlockRank": "M10",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Charizard",
+		"style": 1,
+		"dpr": 14326000,
+		"sleepType": "snoozing",
+		"unlockRank": "B2",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Charizard",
+		"style": 2,
+		"dpr": 28766000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Charizard",
+		"style": 3,
+		"dpr": 62776000,
+		"sleepType": "snoozing",
+		"unlockRank": "G2",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Charizard",
+		"style": 4,
+		"dpr": 77102000,
+		"sleepType": "snoozing",
+		"unlockRank": "G4",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Squirtle",
+		"style": 1,
+		"dpr": 418000,
+		"sleepType": "slumbering",
+		"unlockRank": "U3",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Squirtle",
+		"style": 2,
+		"dpr": 2812000,
+		"sleepType": "slumbering",
+		"unlockRank": "U4",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Squirtle",
+		"style": 3,
+		"dpr": 9918000,
+		"sleepType": "slumbering",
+		"unlockRank": "M5",
+		"areas": [7, 1, 4]
+	},
+	{
+		"pokemon": "Squirtle",
+		"style": 4,
+		"dpr": 13490000,
+		"sleepType": "slumbering",
+		"unlockRank": "M9",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Wartortle",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "slumbering",
+		"unlockRank": "M15",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Wartortle",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "slumbering",
+		"unlockRank": "M10",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Wartortle",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "slumbering",
+		"unlockRank": "B1",
+		"areas": [7, 1, 4]
+	},
+	{
+		"pokemon": "Wartortle",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "slumbering",
+		"unlockRank": "B5",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Blastoise",
+		"style": 1,
+		"dpr": 14326000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Blastoise",
+		"style": 2,
+		"dpr": 28766000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Blastoise",
+		"style": 3,
+		"dpr": 62776000,
+		"sleepType": "slumbering",
+		"unlockRank": "G5",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Blastoise",
+		"style": 4,
+		"dpr": 77102000,
+		"sleepType": "slumbering",
+		"unlockRank": "M1",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Caterpie",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 1, 5, 6]
+	},
+	{
+		"pokemon": "Caterpie",
+		"style": 2,
+		"dpr": 1558000,
+		"sleepType": "dozing",
+		"unlockRank": "U5",
+		"areas": [0, 7, 1, 5, 6]
+	},
+	{
+		"pokemon": "Caterpie",
+		"style": 3,
+		"dpr": 6574000,
+		"sleepType": "dozing",
+		"unlockRank": "M4",
+		"areas": [7, 1, 5, 6]
+	},
+	{
+		"pokemon": "Caterpie",
+		"style": 4,
+		"dpr": 9120000,
+		"sleepType": "dozing",
+		"unlockRank": "M10",
+		"areas": [0, 7, 1, 5, 6]
+	},
+	{
+		"pokemon": "Metapod",
+		"style": 1,
+		"dpr": 570000,
+		"sleepType": "dozing",
+		"unlockRank": "M5",
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Metapod",
+		"style": 2,
+		"dpr": 3154000,
+		"sleepType": "dozing",
+		"unlockRank": "B1",
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Metapod",
+		"style": 3,
+		"dpr": 10830000,
+		"sleepType": "dozing",
+		"unlockRank": "B5",
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Metapod",
+		"style": 4,
+		"dpr": 14326000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Butterfree",
+		"style": 1,
+		"dpr": 9918000,
+		"sleepType": "dozing",
+		"unlockRank": "G4",
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Butterfree",
+		"style": 2,
+		"dpr": 20824000,
+		"sleepType": "dozing",
+		"unlockRank": "U3",
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Butterfree",
+		"style": 3,
+		"dpr": 48070000,
+		"sleepType": "dozing",
+		"unlockRank": "U4",
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Butterfree",
+		"style": 4,
+		"dpr": 59052000,
+		"sleepType": "dozing",
+		"unlockRank": "B1",
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Rattata",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Rattata",
+		"style": 2,
+		"dpr": 1558000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Rattata",
+		"style": 3,
+		"dpr": 6574000,
+		"sleepType": "snoozing",
+		"unlockRank": "G4",
+		"areas": [1, 2, 3]
+	},
+	{
+		"pokemon": "Rattata",
+		"style": 4,
+		"dpr": 9120000,
+		"sleepType": "snoozing",
+		"unlockRank": "U3",
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Raticate",
+		"style": 1,
+		"dpr": 1824000,
+		"sleepType": "snoozing",
+		"unlockRank": "U4",
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Raticate",
+		"style": 2,
+		"dpr": 5054000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Raticate",
+		"style": 3,
+		"dpr": 15466000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [1, 2, 3]
+	},
+	{
+		"pokemon": "Raticate",
+		"style": 4,
+		"dpr": 20824000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Ekans",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "dozing",
+		"unlockRank": "B3",
+		"areas": [0, 1, 2, 4, 5, 6]
+	},
+	{
+		"pokemon": "Ekans",
+		"style": 2,
+		"dpr": 1558000,
+		"sleepType": "dozing",
+		"unlockRank": "G2",
+		"areas": [0, 1, 2, 4, 5, 6]
+	},
+	{
+		"pokemon": "Ekans",
+		"style": 3,
+		"dpr": 6574000,
+		"sleepType": "dozing",
+		"unlockRank": "G3",
+		"areas": [1, 2, 4, 5, 6]
+	},
+	{
+		"pokemon": "Ekans",
+		"style": 4,
+		"dpr": 9120000,
+		"sleepType": "dozing",
+		"unlockRank": "M4",
+		"areas": [0, 1, 2, 4, 5, 6]
+	},
+	{
+		"pokemon": "Arbok",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "dozing",
+		"unlockRank": "M8",
+		"areas": [0, 1, 2, 5, 6]
+	},
+	{
+		"pokemon": "Arbok",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": "M14",
+		"areas": [0, 1, 2, 5, 6]
+	},
+	{
+		"pokemon": "Arbok",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "dozing",
+		"unlockRank": "M9",
+		"areas": [1, 2, 5, 6]
+	},
+	{
+		"pokemon": "Arbok",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 1, 2, 5, 6]
+	},
+	{
+		"pokemon": "Pichu",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "slumbering",
+		"unlockRank": "G5",
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Pichu",
+		"style": 2,
+		"dpr": 1558000,
+		"sleepType": "slumbering",
+		"unlockRank": "U1",
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Pichu",
+		"style": 3,
+		"dpr": 6574000,
+		"sleepType": "slumbering",
+		"unlockRank": "U4",
+		"areas": [7, 4, 5]
+	},
+	{
+		"pokemon": "Pichu",
+		"style": 4,
+		"dpr": 9120000,
+		"sleepType": "slumbering",
+		"unlockRank": "M3",
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Pikachu",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "snoozing",
+		"unlockRank": "M4",
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Pikachu",
+		"style": 2,
+		"dpr": 2280000,
+		"sleepType": "snoozing",
+		"unlockRank": "B2",
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Pikachu",
+		"style": 3,
+		"dpr": 8322000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Pikachu",
+		"style": 4,
+		"dpr": 11780000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Raichu",
+		"style": 1,
+		"dpr": 9918000,
+		"sleepType": "snoozing",
+		"unlockRank": "B4",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Raichu",
+		"style": 2,
+		"dpr": 20824000,
+		"sleepType": "snoozing",
+		"unlockRank": "G3",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Raichu",
+		"style": 3,
+		"dpr": 48070000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Raichu",
+		"style": 4,
+		"dpr": 59052000,
+		"sleepType": "snoozing",
+		"unlockRank": "M3",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Sandshrew",
+		"style": 1,
+		"dpr": 2090000,
+		"sleepType": "slumbering",
+		"unlockRank": "M7",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Sandshrew",
+		"style": 2,
+		"dpr": 8322000,
+		"sleepType": "slumbering",
+		"unlockRank": "M8",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Sandshrew",
+		"style": 3,
+		"dpr": 38304000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Sandshrew",
+		"style": 4,
+		"dpr": 48070000,
+		"sleepType": "slumbering",
+		"unlockRank": "G5",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Sandslash",
+		"style": 1,
+		"dpr": 11780000,
+		"sleepType": "slumbering",
+		"unlockRank": "M1",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Sandslash",
+		"style": 2,
+		"dpr": 31806000,
+		"sleepType": "slumbering",
+		"unlockRank": "M1",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Sandslash",
+		"style": 3,
+		"dpr": 90136000,
+		"sleepType": "slumbering",
+		"unlockRank": "M5",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Sandslash",
+		"style": 4,
+		"dpr": 130074000,
+		"sleepType": "slumbering",
+		"unlockRank": "M6",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Cleffa",
+		"style": 1,
+		"dpr": 418000,
+		"sleepType": "slumbering",
+		"unlockRank": "B1",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Cleffa",
+		"style": 2,
+		"dpr": 2812000,
+		"sleepType": "slumbering",
+		"unlockRank": "B5",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Cleffa",
+		"style": 3,
+		"dpr": 9918000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Cleffa",
+		"style": 4,
+		"dpr": 13490000,
+		"sleepType": "slumbering",
+		"unlockRank": "B4",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Clefairy",
+		"style": 1,
+		"dpr": 950000,
+		"sleepType": "snoozing",
+		"unlockRank": "G3",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Clefairy",
+		"style": 2,
+		"dpr": 3914000,
+		"sleepType": "snoozing",
+		"unlockRank": "G4",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Clefairy",
+		"style": 3,
+		"dpr": 12692000,
+		"sleepType": "snoozing",
+		"unlockRank": "M2",
+		"areas": [7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Clefairy",
+		"style": 4,
+		"dpr": 16644000,
+		"sleepType": "snoozing",
+		"unlockRank": "M6",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Clefable",
+		"style": 1,
+		"dpr": 14326000,
+		"sleepType": "snoozing",
+		"unlockRank": "M7",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Clefable",
+		"style": 2,
+		"dpr": 28766000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Clefable",
+		"style": 3,
+		"dpr": 62776000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Clefable",
+		"style": 4,
+		"dpr": 77102000,
+		"sleepType": "snoozing",
+		"unlockRank": "G5",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Vulpix",
+		"style": 1,
+		"dpr": 760000,
+		"sleepType": "snoozing",
+		"unlockRank": "U4",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Vulpix",
+		"style": 2,
+		"dpr": 6574000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Vulpix",
+		"style": 3,
+		"dpr": 19570000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Vulpix",
+		"style": 4,
+		"dpr": 25536000,
+		"sleepType": "snoozing",
+		"unlockRank": "U2",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Ninetales",
+		"style": 1,
+		"dpr": 6004000,
+		"sleepType": "snoozing",
+		"unlockRank": "G2",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Ninetales",
+		"style": 2,
+		"dpr": 22154000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Ninetales",
+		"style": 3,
+		"dpr": 49894000,
+		"sleepType": "snoozing",
+		"unlockRank": "U5",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Ninetales",
+		"style": 4,
+		"dpr": 62776000,
+		"sleepType": "snoozing",
+		"unlockRank": "M6",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "(A) Vulpix",
+		"style": 1,
+		"dpr": 950000,
+		"sleepType": "slumbering",
+		"unlockRank": "M1",
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "(A) Vulpix",
+		"style": 2,
+		"dpr": 7144000,
+		"sleepType": "slumbering",
+		"unlockRank": "B2",
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "(A) Vulpix",
+		"style": 3,
+		"dpr": 20824000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "(A) Vulpix",
+		"style": 4,
+		"dpr": 27132000,
+		"sleepType": "slumbering",
+		"unlockRank": "G2",
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "(A) Ninetales",
+		"style": 1,
+		"dpr": 30476000,
+		"sleepType": "slumbering",
+		"unlockRank": "B1",
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "(A) Ninetales",
+		"style": 2,
+		"dpr": 77102000,
+		"sleepType": "slumbering",
+		"unlockRank": "B5",
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "(A) Ninetales",
+		"style": 3,
+		"dpr": 172482000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "(A) Ninetales",
+		"style": 4,
+		"dpr": 215308000,
+		"sleepType": "slumbering",
+		"unlockRank": "G4",
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Igglybuff",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "slumbering",
+		"unlockRank": "U3",
+		"areas": [0, 1, 2, 4]
+	},
+	{
+		"pokemon": "Igglybuff",
+		"style": 2,
+		"dpr": 1558000,
+		"sleepType": "slumbering",
+		"unlockRank": "U4",
+		"areas": [0, 1, 2, 4]
+	},
+	{
+		"pokemon": "Igglybuff",
+		"style": 3,
+		"dpr": 6574000,
+		"sleepType": "slumbering",
+		"unlockRank": "B2",
+		"areas": [1, 2, 4]
+	},
+	{
+		"pokemon": "Igglybuff",
+		"style": 4,
+		"dpr": 9120000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [0, 1, 2, 4]
+	},
+	{
+		"pokemon": "Jigglypuff",
+		"style": 1,
+		"dpr": 304000,
+		"sleepType": "snoozing",
+		"unlockRank": "G2",
+		"areas": [0, 1, 2, 3, 4]
+	},
+	{
+		"pokemon": "Jigglypuff",
+		"style": 2,
+		"dpr": 2508000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [0, 1, 2, 3, 4]
+	},
+	{
+		"pokemon": "Jigglypuff",
+		"style": 3,
+		"dpr": 9120000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [1, 2, 3, 4]
+	},
+	{
+		"pokemon": "Jigglypuff",
+		"style": 4,
+		"dpr": 12692000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 1, 2, 3, 4]
+	},
+	{
+		"pokemon": "Wigglytuff",
+		"style": 1,
+		"dpr": 5054000,
+		"sleepType": "snoozing",
+		"unlockRank": "G2",
+		"areas": [0, 1, 2]
+	},
+	{
+		"pokemon": "Wigglytuff",
+		"style": 2,
+		"dpr": 11780000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [0, 1, 2]
+	},
+	{
+		"pokemon": "Wigglytuff",
+		"style": 3,
+		"dpr": 30476000,
+		"sleepType": "snoozing",
+		"unlockRank": "U2",
+		"areas": [1, 2]
+	},
+	{
+		"pokemon": "Wigglytuff",
+		"style": 4,
+		"dpr": 38304000,
+		"sleepType": "snoozing",
+		"unlockRank": "M2",
+		"areas": [0, 1, 2]
+	},
+	{
+		"pokemon": "Diglett",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "snoozing",
+		"unlockRank": "M6",
+		"areas": [0, 1, 2, 5]
+	},
+	{
+		"pokemon": "Diglett",
+		"style": 2,
+		"dpr": 1558000,
+		"sleepType": "snoozing",
+		"unlockRank": "M7",
+		"areas": [0, 1, 2, 5]
+	},
+	{
+		"pokemon": "Diglett",
+		"style": 3,
+		"dpr": 6574000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [1, 2, 5]
+	},
+	{
+		"pokemon": "Dugtrio",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [0, 2, 5]
+	},
+	{
+		"pokemon": "Dugtrio",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 2, 5]
+	},
+	{
+		"pokemon": "Dugtrio",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "snoozing",
+		"unlockRank": "G3",
+		"areas": [2, 5]
+	},
+	{
+		"pokemon": "Meowth",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "snoozing",
+		"unlockRank": "U2",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Meowth",
+		"style": 2,
+		"dpr": 2280000,
+		"sleepType": "snoozing",
+		"unlockRank": "U3",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Meowth",
+		"style": 3,
+		"dpr": 8322000,
+		"sleepType": "snoozing",
+		"unlockRank": "B2",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Meowth",
+		"style": 4,
+		"dpr": 11780000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Persian",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Persian",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Persian",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "snoozing",
+		"unlockRank": "U5",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Persian",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "snoozing",
+		"unlockRank": "M1",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Psyduck",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "dozing",
+		"unlockRank": "B1",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Psyduck",
+		"style": 2,
+		"dpr": 1558000,
+		"sleepType": "dozing",
+		"unlockRank": "B5",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Psyduck",
+		"style": 3,
+		"dpr": 6574000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [1, 3, 4]
+	},
+	{
+		"pokemon": "Psyduck",
+		"style": 4,
+		"dpr": 9120000,
+		"sleepType": "dozing",
+		"unlockRank": "G2",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Golduck",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "slumbering",
+		"unlockRank": "U1",
+		"areas": [1]
+	},
+	{
+		"pokemon": "Golduck",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "slumbering",
+		"unlockRank": "M2",
+		"areas": [1]
+	},
+	{
+		"pokemon": "Golduck",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "slumbering",
+		"unlockRank": "M7",
+		"areas": [1]
+	},
+	{
+		"pokemon": "Golduck",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "slumbering",
+		"unlockRank": "M11",
+		"areas": [1]
+	},
+	{
+		"pokemon": "Mankey",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "dozing",
+		"unlockRank": "M17",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Mankey",
+		"style": 2,
+		"dpr": 2090000,
+		"sleepType": "dozing",
+		"unlockRank": "M3",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Mankey",
+		"style": 3,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": "M7",
+		"areas": [1, 3, 4]
+	},
+	{
+		"pokemon": "Mankey",
+		"style": 4,
+		"dpr": 10830000,
+		"sleepType": "dozing",
+		"unlockRank": "M8",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Primeape",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "dozing",
+		"unlockRank": "B1",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Primeape",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": "B5",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Primeape",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [1, 3, 4]
+	},
+	{
+		"pokemon": "Primeape",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "dozing",
+		"unlockRank": "G5",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Growlithe",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "snoozing",
+		"unlockRank": "U4",
+		"areas": [0, 7, 1, 2]
+	},
+	{
+		"pokemon": "Growlithe",
+		"style": 2,
+		"dpr": 2280000,
+		"sleepType": "snoozing",
+		"unlockRank": "U5",
+		"areas": [0, 7, 1, 2]
+	},
+	{
+		"pokemon": "Growlithe",
+		"style": 3,
+		"dpr": 8322000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [7, 1, 2]
+	},
+	{
+		"pokemon": "Growlithe",
+		"style": 4,
+		"dpr": 11780000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [0, 7, 1, 2]
+	},
+	{
+		"pokemon": "Arcanine",
+		"style": 1,
+		"dpr": 16644000,
+		"sleepType": "snoozing",
+		"unlockRank": "G4",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Arcanine",
+		"style": 2,
+		"dpr": 31806000,
+		"sleepType": "snoozing",
+		"unlockRank": "U3",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Arcanine",
+		"style": 3,
+		"dpr": 68666000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Arcanine",
+		"style": 4,
+		"dpr": 85614000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Bellsprout",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Bellsprout",
+		"style": 2,
+		"dpr": 1824000,
+		"sleepType": "dozing",
+		"unlockRank": "G2",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Bellsprout",
+		"style": 3,
+		"dpr": 7144000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [1, 3, 4]
+	},
+	{
+		"pokemon": "Bellsprout",
+		"style": 4,
+		"dpr": 9918000,
+		"sleepType": "dozing",
+		"unlockRank": "U2",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Weepinbell",
+		"style": 1,
+		"dpr": 1824000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 1, 4]
+	},
+	{
+		"pokemon": "Weepinbell",
+		"style": 2,
+		"dpr": 5054000,
+		"sleepType": "dozing",
+		"unlockRank": "G5",
+		"areas": [0, 1, 4]
+	},
+	{
+		"pokemon": "Weepinbell",
+		"style": 3,
+		"dpr": 15466000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [1, 4]
+	},
+	{
+		"pokemon": "Weepinbell",
+		"style": 4,
+		"dpr": 20824000,
+		"sleepType": "dozing",
+		"unlockRank": "U5",
+		"areas": [0, 1, 4]
+	},
+	{
+		"pokemon": "Victreebel",
+		"style": 1,
+		"dpr": 9918000,
+		"sleepType": "dozing",
+		"unlockRank": "M4",
+		"areas": [0, 4]
+	},
+	{
+		"pokemon": "Victreebel",
+		"style": 2,
+		"dpr": 20824000,
+		"sleepType": "dozing",
+		"unlockRank": "M5",
+		"areas": [0, 4]
+	},
+	{
+		"pokemon": "Victreebel",
+		"style": 3,
+		"dpr": 48070000,
+		"sleepType": "dozing",
+		"unlockRank": "M7",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Victreebel",
+		"style": 4,
+		"dpr": 59052000,
+		"sleepType": "dozing",
+		"unlockRank": "M11",
+		"areas": [0, 4]
+	},
+	{
+		"pokemon": "Geodude",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "slumbering",
+		"unlockRank": "M12",
+		"areas": [0, 2, 3, 5]
+	},
+	{
+		"pokemon": "Geodude",
+		"style": 2,
+		"dpr": 1558000,
+		"sleepType": "slumbering",
+		"unlockRank": "U2",
+		"areas": [0, 2, 3, 5]
+	},
+	{
+		"pokemon": "Geodude",
+		"style": 3,
+		"dpr": 6574000,
+		"sleepType": "slumbering",
+		"unlockRank": "M1",
+		"areas": [2, 3, 5]
+	},
+	{
+		"pokemon": "Geodude",
+		"style": 4,
+		"dpr": 9120000,
+		"sleepType": "slumbering",
+		"unlockRank": "M7",
+		"areas": [0, 2, 3, 5]
+	},
+	{
+		"pokemon": "Graveler",
+		"style": 1,
+		"dpr": 1824000,
+		"sleepType": "slumbering",
+		"unlockRank": "M2",
+		"areas": [0, 2, 5]
+	},
+	{
+		"pokemon": "Graveler",
+		"style": 2,
+		"dpr": 5054000,
+		"sleepType": "slumbering",
+		"unlockRank": "U2",
+		"areas": [0, 2, 5]
+	},
+	{
+		"pokemon": "Graveler",
+		"style": 3,
+		"dpr": 15466000,
+		"sleepType": "slumbering",
+		"unlockRank": "M1",
+		"areas": [2, 5]
+	},
+	{
+		"pokemon": "Graveler",
+		"style": 4,
+		"dpr": 20824000,
+		"sleepType": "slumbering",
+		"unlockRank": "M7",
+		"areas": [0, 2, 5]
+	},
+	{
+		"pokemon": "Golem",
+		"style": 1,
+		"dpr": 14326000,
+		"sleepType": "slumbering",
+		"unlockRank": "M2",
+		"areas": [2]
+	},
+	{
+		"pokemon": "Golem",
+		"style": 2,
+		"dpr": 28766000,
+		"sleepType": "slumbering",
+		"unlockRank": "G5",
+		"areas": [2]
+	},
+	{
+		"pokemon": "Golem",
+		"style": 3,
+		"dpr": 62776000,
+		"sleepType": "slumbering",
+		"unlockRank": "U4",
+		"areas": [2]
+	},
+	{
+		"pokemon": "Golem",
+		"style": 4,
+		"dpr": 77102000,
+		"sleepType": "slumbering",
+		"unlockRank": "M5",
+		"areas": [2]
+	},
+	{
+		"pokemon": "Slowpoke",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "snoozing",
+		"unlockRank": "U5",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Slowpoke",
+		"style": 2,
+		"dpr": 2090000,
+		"sleepType": "snoozing",
+		"unlockRank": "U5",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Slowpoke",
+		"style": 3,
+		"dpr": 7714000,
+		"sleepType": "snoozing",
+		"unlockRank": "U5",
+		"areas": [1, 3, 4]
+	},
+	{
+		"pokemon": "Slowpoke",
+		"style": 4,
+		"dpr": 10830000,
+		"sleepType": "snoozing",
+		"unlockRank": "B4",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Slowbro",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "snoozing",
+		"unlockRank": "G3",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Slowbro",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "snoozing",
+		"unlockRank": "G4",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Slowbro",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "snoozing",
+		"unlockRank": "M5",
+		"areas": [1, 3, 4]
+	},
+	{
+		"pokemon": "Slowbro",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "snoozing",
+		"unlockRank": "M9",
+		"areas": [0, 1, 3, 4]
+	},
+	{
+		"pokemon": "Slowking",
+		"style": 1,
+		"dpr": 16644000,
+		"sleepType": "snoozing",
+		"unlockRank": "M10",
+		"areas": [1]
+	},
+	{
+		"pokemon": "Slowking",
+		"style": 2,
+		"dpr": 31806000,
+		"sleepType": "snoozing",
+		"unlockRank": "M5",
+		"areas": [1]
+	},
+	{
+		"pokemon": "Slowking",
+		"style": 3,
+		"dpr": 68666000,
+		"sleepType": "snoozing",
+		"unlockRank": "M9",
+		"areas": [1]
+	},
+	{
+		"pokemon": "Slowking",
+		"style": 4,
+		"dpr": 85614000,
+		"sleepType": "snoozing",
+		"unlockRank": "M15",
+		"areas": [1]
+	},
+	{
+		"pokemon": "Magnemite",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "slumbering",
+		"unlockRank": "M10",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Magnemite",
+		"style": 2,
+		"dpr": 1824000,
+		"sleepType": "slumbering",
+		"unlockRank": "M5",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Magnemite",
+		"style": 3,
+		"dpr": 7144000,
+		"sleepType": "slumbering",
+		"unlockRank": "M9",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Magneton",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "slumbering",
+		"unlockRank": "M10",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Magneton",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "slumbering",
+		"unlockRank": "M5",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Magneton",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "slumbering",
+		"unlockRank": "M9",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Magnezone",
+		"style": 1,
+		"dpr": 16644000,
+		"sleepType": "slumbering",
+		"unlockRank": "M10",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Magnezone",
+		"style": 2,
+		"dpr": 31806000,
+		"sleepType": "slumbering",
+		"unlockRank": "M5",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Magnezone",
+		"style": 3,
+		"dpr": 68666000,
+		"sleepType": "slumbering",
+		"unlockRank": "M9",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Farfetch'd",
+		"style": 1,
+		"dpr": 12692000,
+		"sleepType": "slumbering",
+		"unlockRank": "M10",
+		"areas": [0, 7, 1, 5]
+	},
+	{
+		"pokemon": "Farfetch'd",
+		"style": 2,
+		"dpr": 48070000,
+		"sleepType": "slumbering",
+		"unlockRank": "M5",
+		"areas": [0, 7, 1, 5]
+	},
+	{
+		"pokemon": "Farfetch'd",
+		"style": 3,
+		"dpr": 147364000,
+		"sleepType": "slumbering",
+		"unlockRank": "M9",
+		"areas": [7, 1, 5]
+	},
+	{
+		"pokemon": "Farfetch'd",
+		"style": 4,
+		"dpr": 163742000,
+		"sleepType": "slumbering",
+		"unlockRank": "M10",
+		"areas": [0, 7, 1, 5]
+	},
+	{
+		"pokemon": "Doduo",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "slumbering",
+		"unlockRank": "M5",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Doduo",
+		"style": 2,
+		"dpr": 1558000,
+		"sleepType": "slumbering",
+		"unlockRank": "M9",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Doduo",
+		"style": 3,
+		"dpr": 6574000,
+		"sleepType": "slumbering",
+		"unlockRank": "M10",
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Doduo",
+		"style": 4,
+		"dpr": 9120000,
+		"sleepType": "slumbering",
+		"unlockRank": "M3",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Dodrio",
+		"style": 1,
+		"dpr": 1824000,
+		"sleepType": "slumbering",
+		"unlockRank": "M7",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Dodrio",
+		"style": 2,
+		"dpr": 5054000,
+		"sleepType": "slumbering",
+		"unlockRank": "M13",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Dodrio",
+		"style": 3,
+		"dpr": 15466000,
+		"sleepType": "slumbering",
+		"unlockRank": "M8",
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Dodrio",
+		"style": 4,
+		"dpr": 20824000,
+		"sleepType": "slumbering",
+		"unlockRank": "B2",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Gastly",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 2, 3, 5]
+	},
+	{
+		"pokemon": "Gastly",
+		"style": 2,
+		"dpr": 2090000,
+		"sleepType": "dozing",
+		"unlockRank": "G2",
+		"areas": [0, 2, 3, 5]
+	},
+	{
+		"pokemon": "Gastly",
+		"style": 3,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": "G4",
+		"areas": [2, 3, 5]
+	},
+	{
+		"pokemon": "Haunter",
+		"style": 1,
+		"dpr": 2090000,
+		"sleepType": "dozing",
+		"unlockRank": "U3",
+		"areas": [0, 2, 3, 5]
+	},
+	{
+		"pokemon": "Haunter",
+		"style": 2,
+		"dpr": 5472000,
+		"sleepType": "dozing",
+		"unlockRank": "U4",
+		"areas": [0, 2, 3, 5]
+	},
+	{
+		"pokemon": "Haunter",
+		"style": 3,
+		"dpr": 16644000,
+		"sleepType": "dozing",
+		"unlockRank": "M5",
+		"areas": [2, 3, 5]
+	},
+	{
+		"pokemon": "Gengar",
+		"style": 1,
+		"dpr": 14326000,
+		"sleepType": "dozing",
+		"unlockRank": "M9",
+		"areas": [2, 5]
+	},
+	{
+		"pokemon": "Gengar",
+		"style": 2,
+		"dpr": 28766000,
+		"sleepType": "dozing",
+		"unlockRank": "M9",
+		"areas": [2, 5]
+	},
+	{
+		"pokemon": "Gengar",
+		"style": 3,
+		"dpr": 62776000,
+		"sleepType": "dozing",
+		"unlockRank": "M10",
+		"areas": [2, 5]
+	},
+	{
+		"pokemon": "Gengar",
+		"style": 4,
+		"dpr": 77102000,
+		"sleepType": "dozing",
+		"unlockRank": "B2",
+		"areas": [2, 5]
+	},
+	{
+		"pokemon": "Onix",
+		"style": 1,
+		"dpr": 8322000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Onix",
+		"style": 2,
+		"dpr": 18050000,
+		"sleepType": "slumbering",
+		"unlockRank": "G2",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Onix",
+		"style": 3,
+		"dpr": 43700000,
+		"sleepType": "slumbering",
+		"unlockRank": "G4",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Steelix",
+		"style": 1,
+		"dpr": 31806000,
+		"sleepType": "slumbering",
+		"unlockRank": "U3",
+		"areas": [7, 2, 5]
+	},
+	{
+		"pokemon": "Steelix",
+		"style": 2,
+		"dpr": 55594000,
+		"sleepType": "slumbering",
+		"unlockRank": "U4",
+		"areas": [7, 2, 5]
+	},
+	{
+		"pokemon": "Steelix",
+		"style": 3,
+		"dpr": 115976000,
+		"sleepType": "slumbering",
+		"unlockRank": "M5",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Cubone",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "slumbering",
+		"unlockRank": "M9",
+		"areas": [0, 7, 2, 3]
+	},
+	{
+		"pokemon": "Cubone",
+		"style": 2,
+		"dpr": 2090000,
+		"sleepType": "slumbering",
+		"unlockRank": "M9",
+		"areas": [0, 7, 2, 3]
+	},
+	{
+		"pokemon": "Cubone",
+		"style": 3,
+		"dpr": 7714000,
+		"sleepType": "slumbering",
+		"unlockRank": "M10",
+		"areas": [7, 2, 3]
+	},
+	{
+		"pokemon": "Cubone",
+		"style": 4,
+		"dpr": 10830000,
+		"sleepType": "slumbering",
+		"unlockRank": "B2",
+		"areas": [0, 7, 2, 3]
+	},
+	{
+		"pokemon": "Marowak",
+		"style": 1,
+		"dpr": 2508000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [0, 7, 2, 3]
+	},
+	{
+		"pokemon": "Marowak",
+		"style": 2,
+		"dpr": 6574000,
+		"sleepType": "slumbering",
+		"unlockRank": "G2",
+		"areas": [0, 7, 2, 3]
+	},
+	{
+		"pokemon": "Marowak",
+		"style": 3,
+		"dpr": 19570000,
+		"sleepType": "slumbering",
+		"unlockRank": "G4",
+		"areas": [7, 2, 3]
+	},
+	{
+		"pokemon": "Marowak",
+		"style": 4,
+		"dpr": 25536000,
+		"sleepType": "slumbering",
+		"unlockRank": "U3",
+		"areas": [0, 7, 2, 3]
+	},
+	{
+		"pokemon": "Happiny",
+		"style": 1,
+		"dpr": 950000,
+		"sleepType": "slumbering",
+		"unlockRank": "U4",
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Happiny",
+		"style": 2,
+		"dpr": 6004000,
+		"sleepType": "slumbering",
+		"unlockRank": "M5",
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Happiny",
+		"style": 3,
+		"dpr": 31806000,
+		"sleepType": "slumbering",
+		"unlockRank": "M9",
+		"areas": [7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Happiny",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "slumbering",
+		"unlockRank": "M9",
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Chansey",
+		"style": 1,
+		"dpr": 12682000,
+		"sleepType": "snoozing",
+		"unlockRank": "M10",
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Chansey",
+		"style": 2,
+		"dpr": 46208000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Chansey",
+		"style": 3,
+		"dpr": 93290000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Chansey",
+		"style": 4,
+		"dpr": 108300000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Blissey",
+		"style": 1,
+		"dpr": 30476000,
+		"sleepType": "snoozing",
+		"unlockRank": "G4",
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Blissey",
+		"style": 2,
+		"dpr": 73112000,
+		"sleepType": "snoozing",
+		"unlockRank": "U3",
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Blissey",
+		"style": 3,
+		"dpr": 172710000,
+		"sleepType": "snoozing",
+		"unlockRank": "U4",
+		"areas": [7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Blissey",
+		"style": 4,
+		"dpr": 205884000,
+		"sleepType": "snoozing",
+		"unlockRank": "M6",
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Kangaskhan",
+		"style": 1,
+		"dpr": 8322000,
+		"sleepType": "snoozing",
+		"unlockRank": "M10",
+		"areas": [0, 7, 1, 6]
+	},
+	{
+		"pokemon": "Kangaskhan",
+		"style": 2,
+		"dpr": 18050000,
+		"sleepType": "snoozing",
+		"unlockRank": "M16",
+		"areas": [0, 7, 1, 6]
+	},
+	{
+		"pokemon": "Kangaskhan",
+		"style": 3,
+		"dpr": 43700000,
+		"sleepType": "snoozing",
+		"unlockRank": "M11",
+		"areas": [0, 7, 1, 6]
+	},
+	{
+		"pokemon": "Kangaskhan",
+		"style": 4,
+		"dpr": 52706000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [0, 7, 1, 6]
+	},
+	{
+		"pokemon": "Mime Jr",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "slumbering",
+		"unlockRank": "B5",
+		"areas": [1, 5]
+	},
+	{
+		"pokemon": "Mime Jr",
+		"style": 2,
+		"dpr": 2280000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [1, 5]
+	},
+	{
+		"pokemon": "Mime Jr",
+		"style": 3,
+		"dpr": 8322000,
+		"sleepType": "slumbering",
+		"unlockRank": "G2",
+		"areas": [1, 5]
+	},
+	{
+		"pokemon": "Mime Jr",
+		"style": 4,
+		"dpr": 11780000,
+		"sleepType": "slumbering",
+		"unlockRank": "U1",
+		"areas": [1, 5]
+	},
+	{
+		"pokemon": "Mr Mime",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "snoozing",
+		"unlockRank": "U2",
+		"areas": [1, 5]
+	},
+	{
+		"pokemon": "Mr Mime",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [1, 5]
+	},
+	{
+		"pokemon": "Mr Mime",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [1, 5]
+	},
+	{
+		"pokemon": "Mr Mime",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [1, 5]
+	},
+	{
+		"pokemon": "Pinsir",
+		"style": 1,
+		"dpr": 7144000,
+		"sleepType": "dozing",
+		"unlockRank": "G2",
+		"areas": [0, 7, 1, 6]
+	},
+	{
+		"pokemon": "Pinsir",
+		"style": 2,
+		"dpr": 15466000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 1, 6]
+	},
+	{
+		"pokemon": "Pinsir",
+		"style": 3,
+		"dpr": 38304000,
+		"sleepType": "dozing",
+		"unlockRank": "U2",
+		"areas": [0, 7, 1, 6]
+	},
+	{
+		"pokemon": "Pinsir",
+		"style": 4,
+		"dpr": 48070000,
+		"sleepType": "dozing",
+		"unlockRank": "B1",
+		"areas": [0, 7, 1, 6]
+	},
+	{
+		"pokemon": "Ditto",
+		"style": 1,
+		"dpr": 5472000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Ditto",
+		"style": 2,
+		"dpr": 12692000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Ditto",
+		"style": 3,
+		"dpr": 31806000,
+		"sleepType": "snoozing",
+		"unlockRank": "B3",
+		"areas": [0, 7, 1, 4, 5, 6]
+	},
+	{
+		"pokemon": "Ditto",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "snoozing",
+		"unlockRank": "G2",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Ditto",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [7, 1]
+	},
+	{
+		"pokemon": "Ditto",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 7]
+	},
+	{
+		"pokemon": "Ditto",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "snoozing",
+		"unlockRank": "G5",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Ditto",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "snoozing",
+		"unlockRank": "M1",
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Ditto",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "snoozing",
+		"unlockRank": "M1",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Ditto",
+		"style": 4,
+		"dpr": 115976000,
+		"sleepType": "snoozing",
+		"unlockRank": "M5",
+		"areas": [5]
+	},
+	{
+		"pokemon": "Ditto",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "snoozing",
+		"unlockRank": "M6",
+		"areas": [6]
+	},
+	{
+		"pokemon": "Ditto",
+		"style": 4,
+		"dpr": 115976000,
+		"sleepType": "snoozing",
+		"unlockRank": "G2",
+		"areas": [0, 7, 1, 2, 4, 5, 6]
+	},
+	{
+		"pokemon": "Eevee",
+		"style": 1,
+		"dpr": 418000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Eevee",
+		"style": 2,
+		"dpr": 2812000,
+		"sleepType": "snoozing",
+		"unlockRank": "M1",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Eevee",
+		"style": 3,
+		"dpr": 9918000,
+		"sleepType": "snoozing",
+		"unlockRank": "M2",
+		"areas": [7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Eevee",
+		"style": 4,
+		"dpr": 13490000,
+		"sleepType": "snoozing",
+		"unlockRank": "M6",
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Vaporeon",
+		"style": 1,
+		"dpr": 13490000,
+		"sleepType": "slumbering",
+		"unlockRank": "M7",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Vaporeon",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "slumbering",
+		"unlockRank": "U1",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Vaporeon",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "slumbering",
+		"unlockRank": "U5",
+		"areas": [7, 1]
+	},
+	{
+		"pokemon": "Vaporeon",
+		"style": 4,
+		"dpr": 73112000,
+		"sleepType": "slumbering",
+		"unlockRank": "M1",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Jolteon",
+		"style": 1,
+		"dpr": 13490000,
+		"sleepType": "snoozing",
+		"unlockRank": "M7",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Jolteon",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "snoozing",
+		"unlockRank": "M11",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Jolteon",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "snoozing",
+		"unlockRank": "M12",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Jolteon",
+		"style": 4,
+		"dpr": 73112000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Flareon",
+		"style": 1,
+		"dpr": 13490000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Flareon",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Flareon",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "snoozing",
+		"unlockRank": "B4",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Flareon",
+		"style": 4,
+		"dpr": 73112000,
+		"sleepType": "snoozing",
+		"unlockRank": "G3",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Espeon",
+		"style": 1,
+		"dpr": 13490000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 2, 4]
+	},
+	{
+		"pokemon": "Espeon",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "snoozing",
+		"unlockRank": "M4",
+		"areas": [0, 7, 2, 4]
+	},
+	{
+		"pokemon": "Espeon",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "snoozing",
+		"unlockRank": "M8",
+		"areas": [7, 2, 4]
+	},
+	{
+		"pokemon": "Espeon",
+		"style": 4,
+		"dpr": 73112000,
+		"sleepType": "snoozing",
+		"unlockRank": "M9",
+		"areas": [0, 7, 2, 4]
+	},
+	{
+		"pokemon": "Umbreon",
+		"style": 1,
+		"dpr": 13490000,
+		"sleepType": "dozing",
+		"unlockRank": "U2",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Umbreon",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "dozing",
+		"unlockRank": "M1",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Umbreon",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "dozing",
+		"unlockRank": "M7",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Umbreon",
+		"style": 4,
+		"dpr": 73112000,
+		"sleepType": "dozing",
+		"unlockRank": "M2",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Leafeon",
+		"style": 1,
+		"dpr": 13490000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Leafeon",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "dozing",
+		"unlockRank": "U5",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Leafeon",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "dozing",
+		"unlockRank": "M1",
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Leafeon",
+		"style": 4,
+		"dpr": 73112000,
+		"sleepType": "dozing",
+		"unlockRank": "M7",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Glaceon",
+		"style": 1,
+		"dpr": 13490000,
+		"sleepType": "slumbering",
+		"unlockRank": "M11",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Glaceon",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "slumbering",
+		"unlockRank": "M12",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Glaceon",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "slumbering",
+		"unlockRank": "U3",
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Glaceon",
+		"style": 4,
+		"dpr": 73112000,
+		"sleepType": "slumbering",
+		"unlockRank": "M2",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Sylveon",
+		"style": 1,
+		"dpr": 13490000,
+		"sleepType": "snoozing",
+		"unlockRank": "M2",
+		"areas": [0, 7]
+	},
+	{
+		"pokemon": "Sylveon",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "snoozing",
+		"unlockRank": "M3",
+		"areas": [0, 7]
+	},
+	{
+		"pokemon": "Sylveon",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "snoozing",
+		"unlockRank": "B2",
+		"areas": [0, 7]
+	},
+	{
+		"pokemon": "Sylveon",
+		"style": 4,
+		"dpr": 73112000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 7]
+	},
+	{
+		"pokemon": "Dratini",
+		"style": 1,
+		"dpr": 570000,
+		"sleepType": "dozing",
+		"unlockRank": "G2",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Dratini",
+		"style": 2,
+		"dpr": 12692000,
+		"sleepType": "dozing",
+		"unlockRank": "M9",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Dratini",
+		"style": 3,
+		"dpr": 20824000,
+		"sleepType": "dozing",
+		"unlockRank": "M13",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Dratini",
+		"style": 4,
+		"dpr": 25536000,
+		"sleepType": "dozing",
+		"unlockRank": "M19",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Dragonair",
+		"style": 1,
+		"dpr": 4636000,
+		"sleepType": "dozing",
+		"unlockRank": "M9",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Dragonair",
+		"style": 2,
+		"dpr": 15466000,
+		"sleepType": "dozing",
+		"unlockRank": "M13",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Dragonair",
+		"style": 3,
+		"dpr": 38304000,
+		"sleepType": "dozing",
+		"unlockRank": "M19",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Dragonair",
+		"style": 4,
+		"dpr": 48070000,
+		"sleepType": "dozing",
+		"unlockRank": "M9",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Dragonite",
+		"style": 1,
+		"dpr": 46208000,
+		"sleepType": "dozing",
+		"unlockRank": "M13",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Dragonite",
+		"style": 2,
+		"dpr": 77102000,
+		"sleepType": "dozing",
+		"unlockRank": "M19",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Dragonite",
+		"style": 3,
+		"dpr": 155344000,
+		"sleepType": "dozing",
+		"unlockRank": "B4",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Dragonite",
+		"style": 4,
+		"dpr": 185516000,
+		"sleepType": "dozing",
+		"unlockRank": "G3",
+		"areas": [4]
+	},
+	{
+		"pokemon": "Chikorita",
+		"style": 1,
+		"dpr": 418000,
+		"sleepType": "dozing",
+		"unlockRank": "G4",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Chikorita",
+		"style": 2,
+		"dpr": 2812000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Chikorita",
+		"style": 3,
+		"dpr": 9918000,
+		"sleepType": "dozing",
+		"unlockRank": "G5",
+		"areas": [7, 1, 4]
+	},
+	{
+		"pokemon": "Chikorita",
+		"style": 4,
+		"dpr": 13490000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Bayleef",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "dozing",
+		"unlockRank": "U2",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Bayleef",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": "M1",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Bayleef",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "dozing",
+		"unlockRank": "M2",
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Bayleef",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "dozing",
+		"unlockRank": "M7",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Meganium",
+		"style": 1,
+		"dpr": 14326000,
+		"sleepType": "dozing",
+		"unlockRank": "M11",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Meganium",
+		"style": 2,
+		"dpr": 28766000,
+		"sleepType": "dozing",
+		"unlockRank": "M12",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Meganium",
+		"style": 3,
+		"dpr": 62776000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Meganium",
+		"style": 4,
+		"dpr": 77102000,
+		"sleepType": "dozing",
+		"unlockRank": "G5",
+		"areas": [0, 7, 4]
+	},
+	{
+		"pokemon": "Cyndaquil",
+		"style": 1,
+		"dpr": 418000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Cyndaquil",
+		"style": 2,
+		"dpr": 2812000,
+		"sleepType": "snoozing",
+		"unlockRank": "U2",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Cyndaquil",
+		"style": 3,
+		"dpr": 9918000,
+		"sleepType": "snoozing",
+		"unlockRank": "M1",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Cyndaquil",
+		"style": 4,
+		"dpr": 13490000,
+		"sleepType": "snoozing",
+		"unlockRank": "M2",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Quilava",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "snoozing",
+		"unlockRank": "M7",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Quilava",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "snoozing",
+		"unlockRank": "M11",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Quilava",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "snoozing",
+		"unlockRank": "M12",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Quilava",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Typhlosion",
+		"style": 1,
+		"dpr": 14326000,
+		"sleepType": "snoozing",
+		"unlockRank": "G5",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Typhlosion",
+		"style": 2,
+		"dpr": 28766000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Typhlosion",
+		"style": 3,
+		"dpr": 62776000,
+		"sleepType": "snoozing",
+		"unlockRank": "U2",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Typhlosion",
+		"style": 4,
+		"dpr": 77102000,
+		"sleepType": "snoozing",
+		"unlockRank": "M1",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Totodile",
+		"style": 1,
+		"dpr": 418000,
+		"sleepType": "slumbering",
+		"unlockRank": "M2",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Totodile",
+		"style": 2,
+		"dpr": 2812000,
+		"sleepType": "slumbering",
+		"unlockRank": "M7",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Totodile",
+		"style": 3,
+		"dpr": 9918000,
+		"sleepType": "slumbering",
+		"unlockRank": "M11",
+		"areas": [7, 1]
+	},
+	{
+		"pokemon": "Totodile",
+		"style": 4,
+		"dpr": 13490000,
+		"sleepType": "slumbering",
+		"unlockRank": "M12",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Croconaw",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "slumbering",
+		"unlockRank": "B2",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Croconaw",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Croconaw",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "slumbering",
+		"unlockRank": "U1",
+		"areas": [7, 1]
+	},
+	{
+		"pokemon": "Croconaw",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "slumbering",
+		"unlockRank": "G3",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Feraligatr",
+		"style": 1,
+		"dpr": 14326000,
+		"sleepType": "slumbering",
+		"unlockRank": "U2",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Feraligatr",
+		"style": 2,
+		"dpr": 28766000,
+		"sleepType": "slumbering",
+		"unlockRank": "U3",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Feraligatr",
+		"style": 3,
+		"dpr": 62776000,
+		"sleepType": "slumbering",
+		"unlockRank": "M7",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Feraligatr",
+		"style": 4,
+		"dpr": 77102000,
+		"sleepType": "slumbering",
+		"unlockRank": "M11",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Togepi",
+		"style": 1,
+		"dpr": 418000,
+		"sleepType": "slumbering",
+		"unlockRank": "M11",
+		"areas": [0, 2, 3, 4]
+	},
+	{
+		"pokemon": "Togepi",
+		"style": 2,
+		"dpr": 2812000,
+		"sleepType": "slumbering",
+		"unlockRank": "M12",
+		"areas": [0, 2, 3, 4]
+	},
+	{
+		"pokemon": "Togepi",
+		"style": 3,
+		"dpr": 9918000,
+		"sleepType": "slumbering",
+		"unlockRank": "M3",
+		"areas": [2, 3, 4]
+	},
+	{
+		"pokemon": "Togepi",
+		"style": 4,
+		"dpr": 13490000,
+		"sleepType": "slumbering",
+		"unlockRank": "M7",
+		"areas": [0, 2, 3, 4]
+	},
+	{
+		"pokemon": "Togetic",
+		"style": 1,
+		"dpr": 2090000,
+		"sleepType": "snoozing",
+		"unlockRank": "M8",
+		"areas": [0, 3, 4]
+	},
+	{
+		"pokemon": "Togetic",
+		"style": 2,
+		"dpr": 5472000,
+		"sleepType": "snoozing",
+		"unlockRank": "U5",
+		"areas": [0, 3, 4]
+	},
+	{
+		"pokemon": "Togetic",
+		"style": 3,
+		"dpr": 16644000,
+		"sleepType": "snoozing",
+		"unlockRank": "M4",
+		"areas": [3, 4]
+	},
+	{
+		"pokemon": "Togetic",
+		"style": 4,
+		"dpr": 22154000,
+		"sleepType": "snoozing",
+		"unlockRank": "M5",
+		"areas": [0, 3, 4]
+	},
+	{
+		"pokemon": "Togekiss",
+		"style": 1,
+		"dpr": 18050000,
+		"sleepType": "snoozing",
+		"unlockRank": "U5",
+		"areas": [0]
+	},
+	{
+		"pokemon": "Togekiss",
+		"style": 2,
+		"dpr": 33478000,
+		"sleepType": "snoozing",
+		"unlockRank": "M4",
+		"areas": [0]
+	},
+	{
+		"pokemon": "Togekiss",
+		"style": 3,
+		"dpr": 73112000,
+		"sleepType": "snoozing",
+		"unlockRank": "M5",
+		"areas": [0]
+	},
+	{
+		"pokemon": "Togekiss",
+		"style": 4,
+		"dpr": 90136000,
+		"sleepType": "snoozing",
+		"unlockRank": "B2",
+		"areas": [0]
+	},
+	{
+		"pokemon": "Natu",
+		"style": 1,
+		"dpr": 2090000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 4, 6]
+	},
+	{
+		"pokemon": "Natu",
+		"style": 2,
+		"dpr": 8322000,
+		"sleepType": "snoozing",
+		"unlockRank": "G2",
+		"areas": [0, 7, 4, 6]
+	},
+	{
+		"pokemon": "Natu",
+		"style": 3,
+		"dpr": 35796000,
+		"sleepType": "snoozing",
+		"unlockRank": "G2",
+		"areas": [0, 7, 4, 6]
+	},
+	{
+		"pokemon": "Natu",
+		"style": 4,
+		"dpr": 46208000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 4, 6]
+	},
+	{
+		"pokemon": "Xatu",
+		"style": 1,
+		"dpr": 11780000,
+		"sleepType": "snoozing",
+		"unlockRank": "U2",
+		"areas": [0, 7, 4, 6]
+	},
+	{
+		"pokemon": "Xatu",
+		"style": 2,
+		"dpr": 31806000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [0, 7, 4, 6]
+	},
+	{
+		"pokemon": "Xatu",
+		"style": 3,
+		"dpr": 85614000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [0, 7, 4, 6]
+	},
+	{
+		"pokemon": "Xatu",
+		"style": 4,
+		"dpr": 122854000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 4, 6]
+	},
+	{
+		"pokemon": "Mareep",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Mareep",
+		"style": 2,
+		"dpr": 1558000,
+		"sleepType": "snoozing",
+		"unlockRank": "G5",
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Mareep",
+		"style": 3,
+		"dpr": 6574000,
+		"sleepType": "snoozing",
+		"unlockRank": "U5",
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Mareep",
+		"style": 4,
+		"dpr": 9120000,
+		"sleepType": "snoozing",
+		"unlockRank": "M4",
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Flaaffy",
+		"style": 1,
+		"dpr": 1824000,
+		"sleepType": "snoozing",
+		"unlockRank": "M5",
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Flaaffy",
+		"style": 2,
+		"dpr": 5054000,
+		"sleepType": "snoozing",
+		"unlockRank": "U2",
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Flaaffy",
+		"style": 3,
+		"dpr": 15466000,
+		"sleepType": "snoozing",
+		"unlockRank": "M1",
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Flaaffy",
+		"style": 4,
+		"dpr": 20824000,
+		"sleepType": "snoozing",
+		"unlockRank": "M2",
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Ampharos",
+		"style": 1,
+		"dpr": 9918000,
+		"sleepType": "snoozing",
+		"unlockRank": "B1",
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Ampharos",
+		"style": 2,
+		"dpr": 20824000,
+		"sleepType": "snoozing",
+		"unlockRank": "B5",
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Ampharos",
+		"style": 3,
+		"dpr": 48070000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Ampharos",
+		"style": 4,
+		"dpr": 59052000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Bonsly",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "slumbering",
+		"unlockRank": "M9",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Bonsly",
+		"style": 2,
+		"dpr": 1558000,
+		"sleepType": "slumbering",
+		"unlockRank": "M13",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Bonsly",
+		"style": 3,
+		"dpr": 6574000,
+		"sleepType": "slumbering",
+		"unlockRank": "M19",
+		"areas": [7, 1]
+	},
+	{
+		"pokemon": "Bonsly",
+		"style": 4,
+		"dpr": 9120000,
+		"sleepType": "slumbering",
+		"unlockRank": "G3",
+		"areas": [0, 7, 1]
+	},
+	{
+		"pokemon": "Sudowoodo",
+		"style": 1,
+		"dpr": 570000,
+		"sleepType": "slumbering",
+		"unlockRank": "U2",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Sudowoodo",
+		"style": 2,
+		"dpr": 3154000,
+		"sleepType": "slumbering",
+		"unlockRank": "M4",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Sudowoodo",
+		"style": 3,
+		"dpr": 10830000,
+		"sleepType": "slumbering",
+		"unlockRank": "M8",
+		"areas": [7, 1, 4]
+	},
+	{
+		"pokemon": "Sudowoodo",
+		"style": 4,
+		"dpr": 14326000,
+		"sleepType": "slumbering",
+		"unlockRank": "M9",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Wooper",
+		"style": 1,
+		"dpr": 2280000,
+		"sleepType": "slumbering",
+		"unlockRank": "B3",
+		"areas": [0, 1, 2, 5]
+	},
+	{
+		"pokemon": "Wooper",
+		"style": 2,
+		"dpr": 7144000,
+		"sleepType": "slumbering",
+		"unlockRank": "G2",
+		"areas": [0, 1, 2, 5]
+	},
+	{
+		"pokemon": "Wooper",
+		"style": 3,
+		"dpr": 28766000,
+		"sleepType": "slumbering",
+		"unlockRank": "G3",
+		"areas": [1, 2, 5]
+	},
+	{
+		"pokemon": "Wooper",
+		"style": 4,
+		"dpr": 33478000,
+		"sleepType": "slumbering",
+		"unlockRank": "B1",
+		"areas": [0, 1, 2, 5]
+	},
+	{
+		"pokemon": "Quagsire",
+		"style": 1,
+		"dpr": 9918000,
+		"sleepType": "slumbering",
+		"unlockRank": "B5",
+		"areas": [0, 1, 2, 5]
+	},
+	{
+		"pokemon": "Quagsire",
+		"style": 2,
+		"dpr": 25536000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [0, 1, 2, 5]
+	},
+	{
+		"pokemon": "Quagsire",
+		"style": 3,
+		"dpr": 68666000,
+		"sleepType": "slumbering",
+		"unlockRank": "G2",
+		"areas": [1, 2, 5]
+	},
+	{
+		"pokemon": "Quagsire",
+		"style": 4,
+		"dpr": 81244000,
+		"sleepType": "slumbering",
+		"unlockRank": "U1",
+		"areas": [0, 1, 2, 5]
+	},
+	{
+		"pokemon": "(P) Wooper",
+		"style": 1,
+		"dpr": 2508000,
+		"sleepType": "dozing",
+		"unlockRank": "U2",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "(P) Wooper",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": "M9",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "(P) Wooper",
+		"style": 3,
+		"dpr": 31806000,
+		"sleepType": "dozing",
+		"unlockRank": "M13",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "(P) Wooper",
+		"style": 4,
+		"dpr": 38304000,
+		"sleepType": "dozing",
+		"unlockRank": "M19",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Clodsire",
+		"style": 1,
+		"dpr": 11780000,
+		"sleepType": "dozing",
+		"unlockRank": "B1",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Clodsire",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "dozing",
+		"unlockRank": "B1",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Clodsire",
+		"style": 3,
+		"dpr": 81244000,
+		"sleepType": "dozing",
+		"unlockRank": "B1",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Clodsire",
+		"style": 4,
+		"dpr": 92796000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Murkrow",
+		"style": 1,
+		"dpr": 6004000,
+		"sleepType": "dozing",
+		"unlockRank": "G2",
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Murkrow",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Murkrow",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "dozing",
+		"unlockRank": "U2",
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Murkrow",
+		"style": 4,
+		"dpr": 93290000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Honchkrow",
+		"style": 1,
+		"dpr": 33478000,
+		"sleepType": "dozing",
+		"unlockRank": "G5",
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Honchkrow",
+		"style": 2,
+		"dpr": 77102000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Honchkrow",
+		"style": 3,
+		"dpr": 179018000,
+		"sleepType": "dozing",
+		"unlockRank": "U4",
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Honchkrow",
+		"style": 4,
+		"dpr": 215612000,
+		"sleepType": "dozing",
+		"unlockRank": "M3",
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Wynaut",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "slumbering",
+		"unlockRank": "M3",
+		"areas": [0, 2, 3, 4]
+	},
+	{
+		"pokemon": "Wynaut",
+		"style": 2,
+		"dpr": 1558000,
+		"sleepType": "slumbering",
+		"unlockRank": "M4",
+		"areas": [0, 2, 3, 4]
+	},
+	{
+		"pokemon": "Wynaut",
+		"style": 3,
+		"dpr": 6574000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [2, 3, 4]
+	},
+	{
+		"pokemon": "Wynaut",
+		"style": 4,
+		"dpr": 9120000,
+		"sleepType": "slumbering",
+		"unlockRank": "G5",
+		"areas": [0, 2, 3, 4]
+	},
+	{
+		"pokemon": "Wobbuffet",
+		"style": 1,
+		"dpr": 570000,
+		"sleepType": "snoozing",
+		"unlockRank": "U1",
+		"areas": [0, 2, 3, 4]
+	},
+	{
+		"pokemon": "Wobbuffet",
+		"style": 2,
+		"dpr": 3154000,
+		"sleepType": "snoozing",
+		"unlockRank": "M7",
+		"areas": [0, 2, 3, 4]
+	},
+	{
+		"pokemon": "Wobbuffet",
+		"style": 3,
+		"dpr": 10830000,
+		"sleepType": "snoozing",
+		"unlockRank": "M11",
+		"areas": [2, 3, 4]
+	},
+	{
+		"pokemon": "Wobbuffet",
+		"style": 4,
+		"dpr": 14326000,
+		"sleepType": "snoozing",
+		"unlockRank": "U2",
+		"areas": [0, 2, 3, 4]
+	},
+	{
+		"pokemon": "Shuckle",
+		"style": 1,
+		"dpr": 12692000,
+		"sleepType": "dozing",
+		"unlockRank": "M1",
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Shuckle",
+		"style": 2,
+		"dpr": 49894000,
+		"sleepType": "dozing",
+		"unlockRank": "M2",
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Shuckle",
+		"style": 3,
+		"dpr": 163742000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Shuckle",
+		"style": 4,
+		"dpr": 185516000,
+		"sleepType": "dozing",
+		"unlockRank": "G5",
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Heracross",
+		"style": 1,
+		"dpr": 7144000,
+		"sleepType": "dozing",
+		"unlockRank": "M1",
+		"areas": [0, 7, 1, 6]
+	},
+	{
+		"pokemon": "Heracross",
+		"style": 2,
+		"dpr": 15466000,
+		"sleepType": "dozing",
+		"unlockRank": "M7",
+		"areas": [0, 7, 1, 6]
+	},
+	{
+		"pokemon": "Heracross",
+		"style": 3,
+		"dpr": 38304000,
+		"sleepType": "dozing",
+		"unlockRank": "M11",
+		"areas": [0, 7, 1, 6]
+	},
+	{
+		"pokemon": "Heracross",
+		"style": 4,
+		"dpr": 48070000,
+		"sleepType": "dozing",
+		"unlockRank": "M12",
+		"areas": [0, 7, 1, 6]
+	},
+	{
+		"pokemon": "Sneasel",
+		"style": 1,
+		"dpr": 6004000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Sneasel",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "dozing",
+		"unlockRank": "G5",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Sneasel",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Sneasel",
+		"style": 4,
+		"dpr": 91770000,
+		"sleepType": "dozing",
+		"unlockRank": "U4",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Weavile",
+		"style": 1,
+		"dpr": 33478000,
+		"sleepType": "dozing",
+		"unlockRank": "M3",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Weavile",
+		"style": 2,
+		"dpr": 77102000,
+		"sleepType": "dozing",
+		"unlockRank": "M4",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Weavile",
+		"style": 3,
+		"dpr": 177726000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Weavile",
+		"style": 4,
+		"dpr": 215422000,
+		"sleepType": "dozing",
+		"unlockRank": "G5",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Delibird",
+		"style": 1,
+		"dpr": 12692000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Delibird",
+		"style": 2,
+		"dpr": 25536000,
+		"sleepType": "dozing",
+		"unlockRank": "U4",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Delibird",
+		"style": 3,
+		"dpr": 55594000,
+		"sleepType": "dozing",
+		"unlockRank": "M3",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Delibird",
+		"style": 4,
+		"dpr": 68666000,
+		"sleepType": "dozing",
+		"unlockRank": "M4",
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Houndour",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "dozing",
+		"unlockRank": "U3",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Houndour",
+		"style": 2,
+		"dpr": 2280000,
+		"sleepType": "dozing",
+		"unlockRank": "M2",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Houndour",
+		"style": 3,
+		"dpr": 8322000,
+		"sleepType": "dozing",
+		"unlockRank": "M3",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Houndour",
+		"style": 4,
+		"dpr": 11780000,
+		"sleepType": "dozing",
+		"unlockRank": "M3",
+		"areas": [0, 7, 2]
+	},
+	{
+		"pokemon": "Houndoom",
+		"style": 1,
+		"dpr": 3914000,
+		"sleepType": "dozing",
+		"unlockRank": "M4",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Houndoom",
+		"style": 2,
+		"dpr": 9120000,
+		"sleepType": "dozing",
+		"unlockRank": "M8",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Houndoom",
+		"style": 3,
+		"dpr": 25536000,
+		"sleepType": "dozing",
+		"unlockRank": "M9",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Houndoom",
+		"style": 4,
+		"dpr": 31806000,
+		"sleepType": "dozing",
+		"unlockRank": "M2",
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Raikou",
+		"style": 1,
+		"dpr": 40926000,
+		"sleepType": "snoozing",
+		"unlockRank": "M6",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Raikou",
+		"style": 2,
+		"dpr": 115976000,
+		"sleepType": "snoozing",
+		"unlockRank": "M7",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Raikou",
+		"style": 3,
+		"dpr": 243390000,
+		"sleepType": "snoozing",
+		"unlockRank": "M1",
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Entei",
+		"style": 1,
+		"dpr": 43700000,
+		"sleepType": "snoozing",
+		"unlockRank": "M5",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Entei",
+		"style": 2,
+		"dpr": 122854000,
+		"sleepType": "snoozing",
+		"unlockRank": "M11",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Entei",
+		"style": 3,
+		"dpr": 262428000,
+		"sleepType": "snoozing",
+		"unlockRank": "M6",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Suicune",
+		"style": 1,
+		"dpr": 46208000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Suicune",
+		"style": 2,
+		"dpr": 130704000,
+		"sleepType": "slumbering",
+		"unlockRank": "G5",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Suicune",
+		"style": 3,
+		"dpr": 275082000,
+		"sleepType": "slumbering",
+		"unlockRank": "U1",
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Larvitar",
+		"style": 1,
+		"dpr": 760000,
+		"sleepType": "slumbering",
+		"unlockRank": "M7",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Larvitar",
+		"style": 2,
+		"dpr": 3496000,
+		"sleepType": "slumbering",
+		"unlockRank": "M11",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Larvitar",
+		"style": 3,
+		"dpr": 11780000,
+		"sleepType": "slumbering",
+		"unlockRank": "M12",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Larvitar",
+		"style": 4,
+		"dpr": 15466000,
+		"sleepType": "slumbering",
+		"unlockRank": "M7",
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Pupitar",
+		"style": 1,
+		"dpr": 3914000,
+		"sleepType": "slumbering",
+		"unlockRank": "M11",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Pupitar",
+		"style": 2,
+		"dpr": 9120000,
+		"sleepType": "slumbering",
+		"unlockRank": "M12",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Pupitar",
+		"style": 3,
+		"dpr": 25536000,
+		"sleepType": "slumbering",
+		"unlockRank": "G1",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Pupitar",
+		"style": 4,
+		"dpr": 31806000,
+		"sleepType": "slumbering",
+		"unlockRank": "G5",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Tyranitar",
+		"style": 1,
+		"dpr": 35796000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Tyranitar",
+		"style": 2,
+		"dpr": 62776000,
+		"sleepType": "dozing",
+		"unlockRank": "U2",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Tyranitar",
+		"style": 3,
+		"dpr": 130074000,
+		"sleepType": "dozing",
+		"unlockRank": "M1",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Tyranitar",
+		"style": 4,
+		"dpr": 155344000,
+		"sleepType": "dozing",
+		"unlockRank": "M2",
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Treecko",
+		"style": 1,
+		"dpr": 1216000,
+		"sleepType": "dozing",
+		"unlockRank": "M7",
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Treecko",
+		"style": 2,
+		"dpr": 12692000,
+		"sleepType": "dozing",
+		"unlockRank": "M11",
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Treecko",
+		"style": 3,
+		"dpr": 35796000,
+		"sleepType": "dozing",
+		"unlockRank": "M12",
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Treecko",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Grovyle",
+		"style": 1,
+		"dpr": 4636000,
+		"sleepType": "dozing",
+		"unlockRank": "G5",
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Grovyle",
+		"style": 2,
+		"dpr": 20824000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Grovyle",
+		"style": 3,
+		"dpr": 55594000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Grovyle",
+		"style": 4,
+		"dpr": 68666000,
+		"sleepType": "dozing",
+		"unlockRank": "G5",
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Sceptile",
+		"style": 1,
+		"dpr": 33478000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Sceptile",
+		"style": 2,
+		"dpr": 65702000,
+		"sleepType": "dozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Sceptile",
+		"style": 3,
+		"dpr": 179018000,
+		"sleepType": "dozing",
+		"unlockRank": "G5",
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Sceptile",
+		"style": 4,
+		"dpr": 195358000,
+		"sleepType": "dozing",
+		"unlockRank": "U1",
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Torchic",
+		"style": 1,
+		"dpr": 1216000,
+		"sleepType": "snoozing",
+		"unlockRank": "G1",
+		"areas": [0, 7, 2, 4, 6]
+	},
+	{
+		"pokemon": "Torchic",
+		"style": 2,
+		"dpr": 12692000,
+		"sleepType": "snoozing",
+		"unlockRank": "G5",
+		"areas": [0, 7, 2, 4, 6]
+	},
+	{
+		"pokemon": "Torchic",
+		"style": 3,
+		"dpr": 35796000,
+		"sleepType": "snoozing",
+		"unlockRank": "M1",
+		"areas": [7, 2, 4, 6]
+	},
+	{
+		"pokemon": "Torchic",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 4, 6]
+	},
+	{
+		"pokemon": "Combusken",
+		"style": 1,
+		"dpr": 4636000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 4, 6]
+	},
+	{
+		"pokemon": "Combusken",
+		"style": 2,
+		"dpr": 20824000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 4, 6]
+	},
+	{
+		"pokemon": "Combusken",
+		"style": 3,
+		"dpr": 55594000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 2, 4, 6]
+	},
+	{
+		"pokemon": "Combusken",
+		"style": 4,
+		"dpr": 68666000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 4, 6]
+	},
+	{
+		"pokemon": "Blaziken",
+		"style": 1,
+		"dpr": 33478000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 4, 6]
+	},
+	{
+		"pokemon": "Blaziken",
+		"style": 2,
+		"dpr": 65702000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 4, 6]
+	},
+	{
+		"pokemon": "Blaziken",
+		"style": 3,
+		"dpr": 179018000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 2, 4, 6]
+	},
+	{
+		"pokemon": "Blaziken",
+		"style": 4,
+		"dpr": 195358000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 4, 6]
+	},
+	{
+		"pokemon": "Mudkip",
+		"style": 1,
+		"dpr": 1216000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Mudkip",
+		"style": 2,
+		"dpr": 12692000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Mudkip",
+		"style": 3,
+		"dpr": 35796000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Mudkip",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Marshtomp",
+		"style": 1,
+		"dpr": 4636000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Marshtomp",
+		"style": 2,
+		"dpr": 20824000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Marshtomp",
+		"style": 3,
+		"dpr": 55594000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Marshtomp",
+		"style": 4,
+		"dpr": 68666000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Swampert",
+		"style": 1,
+		"dpr": 33478000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Swampert",
+		"style": 2,
+		"dpr": 65702000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Swampert",
+		"style": 3,
+		"dpr": 179018000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Swampert",
+		"style": 4,
+		"dpr": 195358000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 6]
+	},
+	{
+		"pokemon": "Ralts",
+		"style": 1,
+		"dpr": 304000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Ralts",
+		"style": 2,
+		"dpr": 10830000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Ralts",
+		"style": 3,
+		"dpr": 18050000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Ralts",
+		"style": 4,
+		"dpr": 22154000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Kirlia",
+		"style": 1,
+		"dpr": 4636000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Kirlia",
+		"style": 2,
+		"dpr": 15466000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Kirlia",
+		"style": 3,
+		"dpr": 38304000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Kirlia",
+		"style": 4,
+		"dpr": 48070000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Gardevoir",
+		"style": 1,
+		"dpr": 20824000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Gardevoir",
+		"style": 2,
+		"dpr": 38304000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Gardevoir",
+		"style": 3,
+		"dpr": 81244000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Gardevoir",
+		"style": 4,
+		"dpr": 97356000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Gallade",
+		"style": 1,
+		"dpr": 31806000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Gallade",
+		"style": 2,
+		"dpr": 55594000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Gallade",
+		"style": 3,
+		"dpr": 115976000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Gallade",
+		"style": 4,
+		"dpr": 139612000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 4]
+	},
+	{
+		"pokemon": "Slakoth",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Slakoth",
+		"style": 2,
+		"dpr": 2090000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Slakoth",
+		"style": 3,
+		"dpr": 7714000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Slakoth",
+		"style": 4,
+		"dpr": 10830000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Vigoroth",
+		"style": 1,
+		"dpr": 2812000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Vigoroth",
+		"style": 2,
+		"dpr": 7144000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Vigoroth",
+		"style": 3,
+		"dpr": 20824000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Vigoroth",
+		"style": 4,
+		"dpr": 27132000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Slaking",
+		"style": 1,
+		"dpr": 22154000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Slaking",
+		"style": 2,
+		"dpr": 40926000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Slaking",
+		"style": 3,
+		"dpr": 85614000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Slaking",
+		"style": 4,
+		"dpr": 103246000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Sableye",
+		"style": 1,
+		"dpr": 5472000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Sableye",
+		"style": 2,
+		"dpr": 12692000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Sableye",
+		"style": 3,
+		"dpr": 31806000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Sableye",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 2]
+	},
+	{
+		"pokemon": "Mawile",
+		"style": 1,
+		"dpr": 12692000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 5, 6]
+	},
+	{
+		"pokemon": "Mawile",
+		"style": 2,
+		"dpr": 48070000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 5, 6]
+	},
+	{
+		"pokemon": "Mawile",
+		"style": 3,
+		"dpr": 147364000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 2, 5, 6]
+	},
+	{
+		"pokemon": "Mawile",
+		"style": 4,
+		"dpr": 163742000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 5, 6]
+	},
+	{
+		"pokemon": "Aron",
+		"style": 1,
+		"dpr": 2090000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Aron",
+		"style": 2,
+		"dpr": 8322000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Aron",
+		"style": 3,
+		"dpr": 40926000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Aron",
+		"style": 4,
+		"dpr": 49894000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Lairon",
+		"style": 1,
+		"dpr": 5054000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Lairon",
+		"style": 2,
+		"dpr": 16644000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Lairon",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Lairon",
+		"style": 4,
+		"dpr": 73112000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Aggron",
+		"style": 1,
+		"dpr": 35795000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Aggron",
+		"style": 2,
+		"dpr": 73112000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Aggron",
+		"style": 3,
+		"dpr": 177726000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Aggron",
+		"style": 4,
+		"dpr": 215422000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Plusle",
+		"style": 1,
+		"dpr": 23902000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Plusle",
+		"style": 2,
+		"dpr": 43700000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Plusle",
+		"style": 3,
+		"dpr": 90136000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 5, 6]
+	},
+	{
+		"pokemon": "Plusle",
+		"style": 4,
+		"dpr": 109478000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Minun",
+		"style": 1,
+		"dpr": 23902000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Minun",
+		"style": 2,
+		"dpr": 43700000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Minun",
+		"style": 3,
+		"dpr": 90136000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 5, 6]
+	},
+	{
+		"pokemon": "Minun",
+		"style": 4,
+		"dpr": 109478000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Gulpin",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Gulpin",
+		"style": 2,
+		"dpr": 1824000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Gulpin",
+		"style": 3,
+		"dpr": 7144000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [1, 2, 3]
+	},
+	{
+		"pokemon": "Gulpin",
+		"style": 4,
+		"dpr": 9918000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Swalot",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 2, 3]
+	},
+	{
+		"pokemon": "Swalot",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 2, 3]
+	},
+	{
+		"pokemon": "Swalot",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [2, 3]
+	},
+	{
+		"pokemon": "Swalot",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 2, 3]
+	},
+	{
+		"pokemon": "Trapinch",
+		"style": 1,
+		"dpr": 1558000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 6]
+	},
+	{
+		"pokemon": "Trapinch",
+		"style": 2,
+		"dpr": 7144000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 6]
+	},
+	{
+		"pokemon": "Trapinch",
+		"style": 3,
+		"dpr": 35796000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 6]
+	},
+	{
+		"pokemon": "Trapinch",
+		"style": 4,
+		"dpr": 46208000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 6]
+	},
+	{
+		"pokemon": "Vibrava",
+		"style": 1,
+		"dpr": 10830000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 6]
+	},
+	{
+		"pokemon": "Vibrava",
+		"style": 2,
+		"dpr": 28766000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 6]
+	},
+	{
+		"pokemon": "Vibrava",
+		"style": 3,
+		"dpr": 90136000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 6]
+	},
+	{
+		"pokemon": "Vibrava",
+		"style": 4,
+		"dpr": 109478000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 6]
+	},
+	{
+		"pokemon": "Flygon",
+		"style": 1,
+		"dpr": 40926000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 6]
+	},
+	{
+		"pokemon": "Flygon",
+		"style": 2,
+		"dpr": 85614000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 6]
+	},
+	{
+		"pokemon": "Flygon",
+		"style": 3,
+		"dpr": 215612000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 6]
+	},
+	{
+		"pokemon": "Flygon",
+		"style": 4,
+		"dpr": 250838000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 6]
+	},
+	{
+		"pokemon": "Swablu",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 4]
+	},
+	{
+		"pokemon": "Swablu",
+		"style": 2,
+		"dpr": 1824000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 4]
+	},
+	{
+		"pokemon": "Swablu",
+		"style": 3,
+		"dpr": 7144000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3, 4]
+	},
+	{
+		"pokemon": "Swablu",
+		"style": 4,
+		"dpr": 9918000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 4]
+	},
+	{
+		"pokemon": "Altaria",
+		"style": 1,
+		"dpr": 4256000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 3, 4]
+	},
+	{
+		"pokemon": "Altaria",
+		"style": 2,
+		"dpr": 9918000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 3, 4]
+	},
+	{
+		"pokemon": "Altaria",
+		"style": 3,
+		"dpr": 27132000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 3, 4]
+	},
+	{
+		"pokemon": "Altaria",
+		"style": 4,
+		"dpr": 33478000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 3, 4]
+	},
+	{
+		"pokemon": "Shuppet",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 5]
+	},
+	{
+		"pokemon": "Shuppet",
+		"style": 2,
+		"dpr": 2090000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 5]
+	},
+	{
+		"pokemon": "Shuppet",
+		"style": 3,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 2, 5]
+	},
+	{
+		"pokemon": "Banette",
+		"style": 1,
+		"dpr": 5054000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 5]
+	},
+	{
+		"pokemon": "Banette",
+		"style": 2,
+		"dpr": 11780000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 5]
+	},
+	{
+		"pokemon": "Banette",
+		"style": 3,
+		"dpr": 30476000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 2, 5]
+	},
+	{
+		"pokemon": "Banette",
+		"style": 4,
+		"dpr": 38304000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 5]
+	},
+	{
+		"pokemon": "Absol",
+		"style": 1,
+		"dpr": 7144000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Absol",
+		"style": 2,
+		"dpr": 15466000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Absol",
+		"style": 3,
+		"dpr": 38304000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Absol",
+		"style": 4,
+		"dpr": 48070000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Spheal",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3]
+	},
+	{
+		"pokemon": "Spheal",
+		"style": 2,
+		"dpr": 2090000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3]
+	},
+	{
+		"pokemon": "Spheal",
+		"style": 3,
+		"dpr": 7714000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3]
+	},
+	{
+		"pokemon": "Spheal",
+		"style": 4,
+		"dpr": 10830000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3]
+	},
+	{
+		"pokemon": "Sealeo",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Sealeo",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Sealeo",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Sealeo",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Walrein",
+		"style": 1,
+		"dpr": 9918000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Walrein",
+		"style": 2,
+		"dpr": 20824000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Walrein",
+		"style": 3,
+		"dpr": 48070000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Walrein",
+		"style": 4,
+		"dpr": 59052000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Bagon",
+		"style": 1,
+		"dpr": 1824000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Bagon",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Bagon",
+		"style": 3,
+		"dpr": 40926000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Bagon",
+		"style": 4,
+		"dpr": 49894000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Shelgon",
+		"style": 1,
+		"dpr": 8322000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Shelgon",
+		"style": 2,
+		"dpr": 23902000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Shelgon",
+		"style": 3,
+		"dpr": 81244000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Shelgon",
+		"style": 4,
+		"dpr": 97356000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Salamence",
+		"style": 1,
+		"dpr": 59052000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Salamence",
+		"style": 2,
+		"dpr": 122854000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Salamence",
+		"style": 3,
+		"dpr": 250800000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Salamence",
+		"style": 4,
+		"dpr": 302290000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Latias",
+		"style": 1,
+		"dpr": 49894000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 6]
+	},
+	{
+		"pokemon": "Latias",
+		"style": 2,
+		"dpr": 139612000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 6]
+	},
+	{
+		"pokemon": "Latias",
+		"style": 3,
+		"dpr": 316578000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 6]
+	},
+	{
+		"pokemon": "Shinx",
+		"style": 1,
+		"dpr": 1558000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Shinx",
+		"style": 2,
+		"dpr": 7144000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Shinx",
+		"style": 3,
+		"dpr": 35796000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Shinx",
+		"style": 4,
+		"dpr": 46208000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Luxio",
+		"style": 1,
+		"dpr": 9120000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Luxio",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Luxio",
+		"style": 3,
+		"dpr": 85614000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Luxio",
+		"style": 4,
+		"dpr": 103246000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Luxray",
+		"style": 1,
+		"dpr": 33478000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Luxray",
+		"style": 2,
+		"dpr": 68666000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Luxray",
+		"style": 3,
+		"dpr": 172482000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Luxray",
+		"style": 4,
+		"dpr": 205922000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Drifloon",
+		"style": 1,
+		"dpr": 3914000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Drifloon",
+		"style": 2,
+		"dpr": 13490000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Drifloon",
+		"style": 3,
+		"dpr": 55594000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Drifblim",
+		"style": 1,
+		"dpr": 62776000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Drifblim",
+		"style": 2,
+		"dpr": 77102000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Drifblim",
+		"style": 3,
+		"dpr": 155344000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Spiritomb",
+		"style": 1,
+		"dpr": 12692000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 4, 6]
+	},
+	{
+		"pokemon": "Spiritomb",
+		"style": 2,
+		"dpr": 49894000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 4, 6]
+	},
+	{
+		"pokemon": "Spiritomb",
+		"style": 3,
+		"dpr": 163742000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 3, 4, 6]
+	},
+	{
+		"pokemon": "Spiritomb",
+		"style": 4,
+		"dpr": 179018000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 4, 6]
+	},
+	{
+		"pokemon": "Riolu",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 2, 3, 4]
+	},
+	{
+		"pokemon": "Riolu",
+		"style": 2,
+		"dpr": 2280000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 2, 3, 4]
+	},
+	{
+		"pokemon": "Riolu",
+		"style": 3,
+		"dpr": 8322000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [2, 3, 4]
+	},
+	{
+		"pokemon": "Riolu",
+		"style": 4,
+		"dpr": 11780000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 2, 3, 4]
+	},
+	{
+		"pokemon": "Lucario",
+		"style": 1,
+		"dpr": 13490000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [3]
+	},
+	{
+		"pokemon": "Lucario",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [3]
+	},
+	{
+		"pokemon": "Lucario",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [3]
+	},
+	{
+		"pokemon": "Lucario",
+		"style": 4,
+		"dpr": 73112000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [3]
+	},
+	{
+		"pokemon": "Croagunk",
+		"style": 1,
+		"dpr": 76000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Croagunk",
+		"style": 2,
+		"dpr": 2090000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Croagunk",
+		"style": 3,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [1, 2, 3]
+	},
+	{
+		"pokemon": "Croagunk",
+		"style": 4,
+		"dpr": 10830000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Toxicroak",
+		"style": 1,
+		"dpr": 3154000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Toxicroak",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Toxicroak",
+		"style": 3,
+		"dpr": 22154000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [1, 2, 3]
+	},
+	{
+		"pokemon": "Toxicroak",
+		"style": 4,
+		"dpr": 28766000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 1, 2, 3]
+	},
+	{
+		"pokemon": "Snover",
+		"style": 1,
+		"dpr": 418000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Snover",
+		"style": 2,
+		"dpr": 2812000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Snover",
+		"style": 3,
+		"dpr": 9918000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Snover",
+		"style": 4,
+		"dpr": 13490000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Abomasnow",
+		"style": 1,
+		"dpr": 7714000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Abomasnow",
+		"style": 2,
+		"dpr": 16644000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Abomasnow",
+		"style": 3,
+		"dpr": 40926000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Cresselia",
+		"style": 1,
+		"dpr": 48070000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 4]
+	},
+	{
+		"pokemon": "Cresselia",
+		"style": 2,
+		"dpr": 134710000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 4]
+	},
+	{
+		"pokemon": "Cresselia",
+		"style": 3,
+		"dpr": 282112000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 4]
+	},
+	{
+		"pokemon": "Darkrai",
+		"style": 1,
+		"dpr": 40926000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Darkrai",
+		"style": 2,
+		"dpr": 73112000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Darkrai",
+		"style": 3,
+		"dpr": 155344000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 3, 4, 5, 6]
+	},
+	{
+		"pokemon": "Munna",
+		"style": 1,
+		"dpr": 570000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5, 6]
+	},
+	{
+		"pokemon": "Munna",
+		"style": 2,
+		"dpr": 6004000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5, 6]
+	},
+	{
+		"pokemon": "Munna",
+		"style": 3,
+		"dpr": 18050000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4, 5, 6]
+	},
+	{
+		"pokemon": "Musharna",
+		"style": 1,
+		"dpr": 22154000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5, 6]
+	},
+	{
+		"pokemon": "Musharna",
+		"style": 2,
+		"dpr": 59052000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5, 6]
+	},
+	{
+		"pokemon": "Musharna",
+		"style": 3,
+		"dpr": 134710000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4, 5, 6]
+	},
+	{
+		"pokemon": "Dwebble",
+		"style": 1,
+		"dpr": 1216000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Dwebble",
+		"style": 2,
+		"dpr": 6574000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Dwebble",
+		"style": 3,
+		"dpr": 33478000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Dwebble",
+		"style": 4,
+		"dpr": 43700000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Crustle",
+		"style": 1,
+		"dpr": 27132000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Crustle",
+		"style": 2,
+		"dpr": 62776000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Crustle",
+		"style": 3,
+		"dpr": 195358000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Crustle",
+		"style": 4,
+		"dpr": 236284000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [6]
+	},
+	{
+		"pokemon": "Rufflet",
+		"style": 1,
+		"dpr": 2090000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Rufflet",
+		"style": 2,
+		"dpr": 8322000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Rufflet",
+		"style": 3,
+		"dpr": 35796000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Rufflet",
+		"style": 4,
+		"dpr": 46208000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Braviary",
+		"style": 1,
+		"dpr": 11780000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Braviary",
+		"style": 2,
+		"dpr": 31806000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Braviary",
+		"style": 3,
+		"dpr": 85614000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Braviary",
+		"style": 4,
+		"dpr": 122854000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3, 6]
+	},
+	{
+		"pokemon": "Tyrunt",
+		"style": 1,
+		"dpr": 2090000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Tyrunt",
+		"style": 2,
+		"dpr": 8322000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Tyrunt",
+		"style": 3,
+		"dpr": 38304000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Tyrunt",
+		"style": 4,
+		"dpr": 48070000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Tyrantrum",
+		"style": 1,
+		"dpr": 27132000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Tyrantrum",
+		"style": 2,
+		"dpr": 68666000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Tyrantrum",
+		"style": 3,
+		"dpr": 179018000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Dedenne",
+		"style": 1,
+		"dpr": 7144000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Dedenne",
+		"style": 2,
+		"dpr": 25536000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Dedenne",
+		"style": 3,
+		"dpr": 55594000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 4, 5]
+	},
+	{
+		"pokemon": "Dedenne",
+		"style": 4,
+		"dpr": 68666000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Pumpkaboo",
+		"style": 1,
+		"dpr": 950000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Pumpkaboo",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Pumpkaboo",
+		"style": 3,
+		"dpr": 38304000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 5, 6]
+	},
+	{
+		"pokemon": "Pumpkaboo",
+		"style": 4,
+		"dpr": 48070000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Gourgeist",
+		"style": 1,
+		"dpr": 23902000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Gourgeist",
+		"style": 2,
+		"dpr": 59052000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Gourgeist",
+		"style": 3,
+		"dpr": 139612000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 5, 6]
+	},
+	{
+		"pokemon": "Gourgeist",
+		"style": 4,
+		"dpr": 172710000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5, 6]
+	},
+	{
+		"pokemon": "Noibat",
+		"style": 1,
+		"dpr": 2090000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Noibat",
+		"style": 2,
+		"dpr": 8322000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Noibat",
+		"style": 3,
+		"dpr": 35796000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Noibat",
+		"style": 4,
+		"dpr": 46208000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Noivern",
+		"style": 1,
+		"dpr": 11780000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Noivern",
+		"style": 2,
+		"dpr": 31806000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Noivern",
+		"style": 3,
+		"dpr": 90136000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 2, 6]
+	},
+	{
+		"pokemon": "Noivern",
+		"style": 4,
+		"dpr": 122854000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 2, 6]
+	},
+	{
+		"pokemon": "Grubbin",
+		"style": 1,
+		"dpr": 1558000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Grubbin",
+		"style": 2,
+		"dpr": 7144000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Grubbin",
+		"style": 3,
+		"dpr": 35796000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Grubbin",
+		"style": 4,
+		"dpr": 46208000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Charjabug",
+		"style": 1,
+		"dpr": 9120000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Charjabug",
+		"style": 2,
+		"dpr": 25536000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Charjabug",
+		"style": 3,
+		"dpr": 81244000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Charjabug",
+		"style": 4,
+		"dpr": 97356000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Vikavolt",
+		"style": 1,
+		"dpr": 43700000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Vikavolt",
+		"style": 2,
+		"dpr": 85614000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Vikavolt",
+		"style": 3,
+		"dpr": 205922000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Vikavolt",
+		"style": 4,
+		"dpr": 243390000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [5]
+	},
+	{
+		"pokemon": "Cutiefly",
+		"style": 1,
+		"dpr": 2090000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4, 6]
+	},
+	{
+		"pokemon": "Cutiefly",
+		"style": 2,
+		"dpr": 8322000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4, 6]
+	},
+	{
+		"pokemon": "Cutiefly",
+		"style": 3,
+		"dpr": 35796000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4, 6]
+	},
+	{
+		"pokemon": "Cutiefly",
+		"style": 4,
+		"dpr": 46208000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4, 6]
+	},
+	{
+		"pokemon": "Ribombee",
+		"style": 1,
+		"dpr": 11780000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4, 6]
+	},
+	{
+		"pokemon": "Ribombee",
+		"style": 2,
+		"dpr": 31806000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4, 6]
+	},
+	{
+		"pokemon": "Ribombee",
+		"style": 3,
+		"dpr": 90136000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4, 6]
+	},
+	{
+		"pokemon": "Ribombee",
+		"style": 4,
+		"dpr": 122854000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4, 6]
+	},
+	{
+		"pokemon": "Stufful",
+		"style": 1,
+		"dpr": 570000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [4]
+	},
+	{
+		"pokemon": "Stufful",
+		"style": 2,
+		"dpr": 11780000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [4]
+	},
+	{
+		"pokemon": "Stufful",
+		"style": 3,
+		"dpr": 19570000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [4]
+	},
+	{
+		"pokemon": "Stufful",
+		"style": 4,
+		"dpr": 25536000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [4]
+	},
+	{
+		"pokemon": "Bewear",
+		"style": 1,
+		"dpr": 6004000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [4]
+	},
+	{
+		"pokemon": "Bewear",
+		"style": 2,
+		"dpr": 19570000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [4]
+	},
+	{
+		"pokemon": "Bewear",
+		"style": 3,
+		"dpr": 46208000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [4]
+	},
+	{
+		"pokemon": "Bewear",
+		"style": 4,
+		"dpr": 55594000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [4]
+	},
+	{
+		"pokemon": "Comfey",
+		"style": 1,
+		"dpr": 7714000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Comfey",
+		"style": 2,
+		"dpr": 27132000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Comfey",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Comfey",
+		"style": 4,
+		"dpr": 73112000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4]
+	},
+	{
+		"pokemon": "Togedemaru",
+		"style": 1,
+		"dpr": 12692000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 5, 6]
+	},
+	{
+		"pokemon": "Togedemaru",
+		"style": 2,
+		"dpr": 49894000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 5, 6]
+	},
+	{
+		"pokemon": "Togedemaru",
+		"style": 3,
+		"dpr": 163742000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3, 5, 6]
+	},
+	{
+		"pokemon": "Togedemaru",
+		"style": 4,
+		"dpr": 179018000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 5, 6]
+	},
+	{
+		"pokemon": "Mimikyu",
+		"style": 1,
+		"dpr": 12692000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Mimikyu",
+		"style": 2,
+		"dpr": 40926000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Mimikyu",
+		"style": 3,
+		"dpr": 139612000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 5]
+	},
+	{
+		"pokemon": "Mimikyu",
+		"style": 4,
+		"dpr": 155344000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Cramorant",
+		"style": 1,
+		"dpr": 8322000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3]
+	},
+	{
+		"pokemon": "Cramorant",
+		"style": 2,
+		"dpr": 28766000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3]
+	},
+	{
+		"pokemon": "Cramorant",
+		"style": 3,
+		"dpr": 68666000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3]
+	},
+	{
+		"pokemon": "Cramorant",
+		"style": 4,
+		"dpr": 85614000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 3]
+	},
+	{
+		"pokemon": "Toxel",
+		"style": 1,
+		"dpr": 950000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Toxel",
+		"style": 2,
+		"dpr": 6004000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Toxel",
+		"style": 3,
+		"dpr": 31806000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Toxel",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Toxtricity (A)",
+		"style": 1,
+		"dpr": 28766000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Toxtricity (A)",
+		"style": 2,
+		"dpr": 65702000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Toxtricity (A)",
+		"style": 3,
+		"dpr": 155344000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Toxtricity (A)",
+		"style": 4,
+		"dpr": 185516000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Toxtricity (L)",
+		"style": 1,
+		"dpr": 28766000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Toxtricity (L)",
+		"style": 2,
+		"dpr": 65702000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Toxtricity (L)",
+		"style": 3,
+		"dpr": 155344000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Toxtricity (L)",
+		"style": 4,
+		"dpr": 185516000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 5]
+	},
+	{
+		"pokemon": "Sprigatito",
+		"style": 1,
+		"dpr": 950000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Sprigatito",
+		"style": 2,
+		"dpr": 11780000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Sprigatito",
+		"style": 3,
+		"dpr": 33478000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 4, 5]
+	},
+	{
+		"pokemon": "Sprigatito",
+		"style": 4,
+		"dpr": 38304000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Floragato",
+		"style": 1,
+		"dpr": 4256000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Floragato",
+		"style": 2,
+		"dpr": 19570000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Floragato",
+		"style": 3,
+		"dpr": 52706000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 4, 5]
+	},
+	{
+		"pokemon": "Floragato",
+		"style": 4,
+		"dpr": 65702000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Meowscarada",
+		"style": 1,
+		"dpr": 27132000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Meowscarada",
+		"style": 2,
+		"dpr": 52706000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Meowscarada",
+		"style": 3,
+		"dpr": 139612000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 4, 5]
+	},
+	{
+		"pokemon": "Meowscarada",
+		"style": 4,
+		"dpr": 163700000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [0, 7, 4, 5]
+	},
+	{
+		"pokemon": "Fuecoco",
+		"style": 1,
+		"dpr": 950000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 5]
+	},
+	{
+		"pokemon": "Fuecoco",
+		"style": 2,
+		"dpr": 11780000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 5]
+	},
+	{
+		"pokemon": "Fuecoco",
+		"style": 3,
+		"dpr": 33478000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 1, 2, 5]
+	},
+	{
+		"pokemon": "Fuecoco",
+		"style": 4,
+		"dpr": 38304000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 2, 5]
+	},
+	{
+		"pokemon": "Crocalor",
+		"style": 1,
+		"dpr": 4256000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 1, 2, 5]
+	},
+	{
+		"pokemon": "Crocalor",
+		"style": 2,
+		"dpr": 19570000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 1, 2, 5]
+	},
+	{
+		"pokemon": "Crocalor",
+		"style": 3,
+		"dpr": 52706000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 1, 2, 5]
+	},
+	{
+		"pokemon": "Crocalor",
+		"style": 4,
+		"dpr": 65702000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 1, 2, 5]
+	},
+	{
+		"pokemon": "Skeledirge",
+		"style": 1,
+		"dpr": 27132000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 1, 2, 5]
+	},
+	{
+		"pokemon": "Skeledirge",
+		"style": 2,
+		"dpr": 52706000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 1, 2, 5]
+	},
+	{
+		"pokemon": "Skeledirge",
+		"style": 3,
+		"dpr": 139612000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 1, 2, 5]
+	},
+	{
+		"pokemon": "Skeledirge",
+		"style": 4,
+		"dpr": 163700000,
+		"sleepType": "dozing",
+		"unlockRank": null,
+		"areas": [7, 1, 2, 5]
+	},
+	{
+		"pokemon": "Quaxly",
+		"style": 1,
+		"dpr": 950000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Quaxly",
+		"style": 2,
+		"dpr": 11780000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Quaxly",
+		"style": 3,
+		"dpr": 33478000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Quaxly",
+		"style": 4,
+		"dpr": 38304000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Quaxwell",
+		"style": 1,
+		"dpr": 4256000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Quaxwell",
+		"style": 2,
+		"dpr": 19570000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Quaxwell",
+		"style": 3,
+		"dpr": 52706000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Quaxwell",
+		"style": 4,
+		"dpr": 65702000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Quaquaval",
+		"style": 1,
+		"dpr": 27132000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Quaquaval",
+		"style": 2,
+		"dpr": 52706000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Quaquaval",
+		"style": 3,
+		"dpr": 139612000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Quaquaval",
+		"style": 4,
+		"dpr": 163700000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 1, 4, 5]
+	},
+	{
+		"pokemon": "Pawmi",
+		"style": 1,
+		"dpr": 950000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Pawmi",
+		"style": 2,
+		"dpr": 6004000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Pawmi",
+		"style": 3,
+		"dpr": 31806000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Pawmi",
+		"style": 4,
+		"dpr": 40926000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [0, 7, 3, 5]
+	},
+	{
+		"pokemon": "Pawmo",
+		"style": 1,
+		"dpr": 5054000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Pawmo",
+		"style": 2,
+		"dpr": 16644000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Pawmo",
+		"style": 3,
+		"dpr": 59052000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Pawmo",
+		"style": 4,
+		"dpr": 73112000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Pawmot",
+		"style": 1,
+		"dpr": 31806000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Pawmot",
+		"style": 2,
+		"dpr": 73112000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Pawmot",
+		"style": 3,
+		"dpr": 177726000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Pawmot",
+		"style": 4,
+		"dpr": 215422000,
+		"sleepType": "snoozing",
+		"unlockRank": null,
+		"areas": [7, 3, 5]
+	},
+	{
+		"pokemon": "Cetoddle",
+		"style": 1,
+		"dpr": 2090000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Cetoddle",
+		"style": 2,
+		"dpr": 7714000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Cetoddle",
+		"style": 3,
+		"dpr": 35796000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Cetoddle",
+		"style": 4,
+		"dpr": 46208000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [0, 7, 3]
+	},
+	{
+		"pokemon": "Cetitan",
+		"style": 1,
+		"dpr": 28766000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Cetitan",
+		"style": 2,
+		"dpr": 65702000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	},
+	{
+		"pokemon": "Cetitan",
+		"style": 3,
+		"dpr": 163742000,
+		"sleepType": "slumbering",
+		"unlockRank": null,
+		"areas": [7, 3]
+	}
+]
