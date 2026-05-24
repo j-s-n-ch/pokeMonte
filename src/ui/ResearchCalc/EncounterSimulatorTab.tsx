@@ -42,6 +42,7 @@ import {
 	type TargetStyleBreakdown,
 } from "../../util/encounter/MonteCarloEngine";
 import Rank from "../../util/Rank";
+import NumericInput from "../common/NumericInput";
 import PokemonIcon from "../IvCalc/PokemonIcon";
 import RankBall from "./RankBallLabel";
 
@@ -901,17 +902,18 @@ export default function EncounterSimulatorTab() {
 									width: "220px",
 								}}
 							>
-								<TextField
-									variant="standard"
-									label="Average Snorlax strength per day"
-									type="number"
+								<Typography
+									variant="caption"
+									color="textSecondary"
+									sx={{ mb: -0.5 }}
+								>
+									Average Snorlax strength per day
+								</Typography>
+								<NumericInput
+									fullWidth
 									value={averageStrength}
-									onChange={(e) =>
-										handleAverageStrengthChange(
-											Math.max(0, Number(e.target.value)),
-										)
-									}
-									sx={{ width: "220px" }}
+									onChange={handleAverageStrengthChange}
+									min={0}
 								/>
 							</Box>
 							<Button
@@ -928,20 +930,28 @@ export default function EncounterSimulatorTab() {
 						>
 							{["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map(
 								(day, idx) => (
-									<TextField
+									<Box
 										key={day}
-										variant="standard"
-										label={day}
-										type="number"
-										value={dailyStrengths[idx]}
-										onChange={(e) =>
-											handleDailyStrengthChange(
-												idx,
-												Math.max(0, Number(e.target.value)),
-											)
-										}
-										sx={{ width: "80px" }}
-									/>
+										sx={{
+											display: "flex",
+											flexDirection: "column",
+											width: "80px",
+										}}
+									>
+										<Typography
+											variant="caption"
+											color="textSecondary"
+											sx={{ mb: -0.5 }}
+										>
+											{day}
+										</Typography>
+										<NumericInput
+											fullWidth
+											value={dailyStrengths[idx]}
+											onChange={(val) => handleDailyStrengthChange(idx, val)}
+											min={0}
+										/>
+									</Box>
 								),
 							)}
 						</Box>
