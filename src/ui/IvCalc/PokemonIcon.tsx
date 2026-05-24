@@ -23,7 +23,7 @@ const PokemonIcon = React.memo(
 		}, [idForm]);
 
 		if (!imgError && !appConfig.iconUrl) {
-			const localUrl = `/images/pokemon/icons/${idForm}.webp`;
+			const localUrl = `/pokesleep-tool/images/pokemon/icons/${idForm}.webp`;
 			return (
 				<StyledIconContainer
 					style={{ width: `${size}px`, height: `${size}px` }}
