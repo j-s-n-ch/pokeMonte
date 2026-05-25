@@ -294,4 +294,14 @@ describe("JSON data verification", () => {
 			expect(pokemon.exp).toBe(600);
 		}
 	});
+
+	test("sleepType should be valid", () => {
+		const validTypes = new Set(["dozing", "snoozing", "slumbering"]);
+		for (const pokemon of pokemons) {
+			expect(
+				validTypes.has(pokemon.sleepType),
+				`id=${pokemon.name} has invalid sleepType=${pokemon.sleepType}`,
+			).toBe(true);
+		}
+	});
 });

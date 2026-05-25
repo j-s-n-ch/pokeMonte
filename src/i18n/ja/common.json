@@ -56,5 +56,7 @@
 	"x username": "nitoyon",
 	"about2": "改善要望・不具合報告は、X (twitter) の <x>@nitoyon</x> または <github>GitHub</github> までお願いします。",
 	"about3": "利用しているデータは「<wiki>ポケモンスリープ攻略・検証Wiki</wiki>」「<rp>RP collection project</rp>」「<raenonx>RaenonX</raenonx>」を参照しています。",
-	"about4": "食材のアイコンは、ちゃんりわさんが作成してくれました。"
+	"about4": "食材のアイコンは、ちゃんりわさんが作成してくれました。",
+	"about_added_title": "追加機能",
+	"about_added_desc": "このツールは、元のツールに「出現シミュレータ」、「スプリット最適化」、「リサーチファインダー」を追加したカスタムフォーク版です。モンテカルロシミュレーションを用いてポケモンの出現分布をシミュレートし、睡眠スプリットのスコアや週間リサーチエリアの戦略を最適化します。"
 }

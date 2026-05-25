@@ -57,5 +57,7 @@
 	"x username": "nitoyon1",
 	"about2": "If you have bug reports or improvement suggestions, please contact X (twitter) <x>@nitoyon1</x> or <github>GitHub repository</github>.",
 	"about3": "I am referring to the data from '<wiki>ポケモンスリープ攻略・検証Wiki</wiki>', '<rp>RP collection project</rp>' and '<raenonx>RaenonX</raenonx>'.",
-	"about4": "The ingredient icon was created by ちゃんりわ."
+	"about4": "The ingredient icon was created by ちゃんりわ.",
+	"about_added_title": "Additional Features",
+	"about_added_desc": "This version of the tool is a custom fork that includes an Encounter Simulator, a Split Optimizer, and a Hunt Finder. These advanced utilities simulate spawn distributions and optimize sleep split scores and weekly map strategies using Monte Carlo modeling."
 }

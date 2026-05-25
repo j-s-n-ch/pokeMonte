@@ -14,7 +14,7 @@ const defaultData = loadConfig();
 
 export default function ResearchCalcApp() {
 	const [data, setData] = useState(defaultData);
-	const [activeTab, setActiveTab] = useState(0);
+	const [activeTab, setActiveTab] = useState(1);
 
 	const updateState = useCallback(
 		(value: Partial<InputAreaData>) => {
@@ -43,18 +43,19 @@ export default function ResearchCalcApp() {
 				>
 					<Tab label="SLEEP TRACKER" />
 					<Tab label="ENCOUNTER SIMULATOR" />
+					<Tab label="SPLIT OPTIMIZER" />
+					<Tab label="HUNT FINDER" />
 				</Tabs>
 			</Box>
 
-			{activeTab === 0 ? (
+			{activeTab === 0 && (
 				<>
 					<InputArea data={data} onChange={onChange} />
 					<NotFixedWarning fieldIndex={data.fieldIndex} />
 					<GeneralPanel data={data} />
 				</>
-			) : (
-				<EncounterSimulatorTab />
 			)}
+			{activeTab >= 1 && <EncounterSimulatorTab activeTab={activeTab - 1} />}
 		</div>
 	);
 }

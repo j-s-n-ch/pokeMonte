@@ -56,5 +56,7 @@
 	"x username": "nitoyon1",
 	"about2": "改善请求和错误报告请通过X (twitter) <x>@nitoyon1</x> 或者 <github>GitHub</github> 进行联系。",
 	"about3": "使用的数据参照了「<wiki>ポケモンスリープ攻略・検証Wiki</wiki>」，「<rp>RP collection project</rp>」，以及「<raenonx>RaenonX</raenonx>」。",
-	"about4": "食材图标由ちゃんりわさん制作。"
+	"about4": "食材图标由ちゃんりわさん制作。",
+	"about_added_title": "追加功能",
+	"about_added_desc": "此版本的工具是一个定制的分支，新增了“遭遇模拟器”、“分段睡眠优化”和“猎人搜索器”功能。这些高级实用工具利用蒙特卡洛模拟来模拟宝可梦出现分布，并优化分段睡眠得分与每周地图策略。"
 }

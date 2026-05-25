@@ -73,6 +73,21 @@ export default function AboutDialog({ open, onClose }: AboutDialogProps) {
 					/>
 					<Trans i18nKey="about4" />
 				</Typography>
+				<Typography
+					sx={{
+						marginBottom: "8px",
+						fontWeight: "bold",
+					}}
+				>
+					{t("about_added_title")}
+				</Typography>
+				<Typography
+					sx={{
+						marginBottom: "16px",
+					}}
+				>
+					{t("about_added_desc")}
+				</Typography>
 			</DialogContent>
 			<DialogActions>
 				<Button onClick={onClose}>{t("close")}</Button>

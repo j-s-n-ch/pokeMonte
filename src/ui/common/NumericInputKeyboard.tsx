@@ -1,6 +1,10 @@
 import { Input } from "@mui/material";
 import React from "react";
-import { clamp, formatWithComma } from "../../util/NumberUtil";
+import {
+	clamp,
+	formatWithComma,
+	getFormatWithCommaPos,
+} from "../../util/NumberUtil";
 import type { NumericInputHandle, NumericInputProps } from "./NumericInput";
 import PopperMenu from "./PopperMenu";
 
@@ -12,7 +16,7 @@ const NumericInputKeyboard = React.memo(
 		({ children, min, max, value, onChange, ...props }, ref) => {
 			const [open, setOpen] = React.useState(false);
 			const [focused, setFocused] = React.useState(false);
-			const [rawText, setRawText] = React.useState(value.toString());
+			const [rawText, setRawText] = React.useState(formatWithComma(value));
 			const anchorRef = React.useRef<HTMLElement>(null);
 
 			const minValue = min ?? 0;
@@ -23,9 +27,13 @@ const NumericInputKeyboard = React.memo(
 
 			const onChangeHandler = React.useCallback(
 				(e: React.ChangeEvent<HTMLInputElement>) => {
-					const text = e.target.value.replace(/,/g, "");
-					setRawText(text);
+					const inputEl = e.target;
+					const selectionStart = inputEl.selectionStart;
+					const originalValue = inputEl.value;
+
+					const text = originalValue.replace(/,/g, "");
 					if (text === "") {
+						setRawText("");
 						onChange(minValue);
 						return;
 					}
@@ -35,7 +43,23 @@ const NumericInputKeyboard = React.memo(
 						return;
 					}
 					const clampedVal = clamp(minValue, val, maxValue);
+					const formatted = formatWithComma(clampedVal);
+					setRawText(formatted);
 					onChange(clampedVal);
+
+					if (selectionStart !== null) {
+						// Calculate number of digits before the cursor in the original typed text
+						const textBeforeCursor = originalValue.slice(0, selectionStart);
+						const digitPos = textBeforeCursor.replace(/,/g, "").length;
+
+						// Find the corresponding position in the newly formatted value
+						const newPosition = getFormatWithCommaPos(clampedVal, digitPos);
+
+						// Restore selection range in the next frame to prevent cursor jump
+						requestAnimationFrame(() => {
+							inputEl.setSelectionRange(newPosition, newPosition);
+						});
+					}
 				},
 				[minValue, maxValue, onChange],
 			);
@@ -45,8 +69,9 @@ const NumericInputKeyboard = React.memo(
 				if (children !== undefined) {
 					setOpen(true);
 				}
-				setRawText(value.toString());
+				setRawText(formatWithComma(value));
 			}, [children, value]);
+
 			const onClose = React.useCallback(() => {
 				// Parse and normalize the value when losing focus
 				let normalizedVal: number;
@@ -64,15 +89,18 @@ const NumericInputKeyboard = React.memo(
 					}
 				}
 				onChange(normalizedVal);
+				setRawText(formatWithComma(normalizedVal));
 				setFocused(false);
 				setOpen(false);
 			}, [rawText, value, minValue, maxValue, onChange]);
+
 			const onBlur = React.useCallback(() => {
 				if (popupEnabled) {
 					return;
 				}
 				onClose();
 			}, [onClose, popupEnabled]);
+
 			// Handle Tab key to close popup
 			const onKeyDown = React.useCallback(
 				(e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -82,10 +110,11 @@ const NumericInputKeyboard = React.memo(
 				},
 				[onClose, open],
 			);
+
 			// Sync rawText when value changes from outside or popup
 			React.useEffect(() => {
 				if (!anchorRef.current?.querySelector("input")?.matches(":focus")) {
-					setRawText(value.toString());
+					setRawText(formatWithComma(value));
 				}
 			}, [value]);
 
@@ -107,7 +136,7 @@ const NumericInputKeyboard = React.memo(
 				<div className="numeric keyboard">
 					<Input
 						{...props}
-						type={focused ? "number" : "tel"}
+						type="text"
 						slotProps={{
 							input: {
 								sx: {

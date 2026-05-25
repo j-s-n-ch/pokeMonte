@@ -111,7 +111,6 @@ function createEmptyIconElement(size: number): React.ReactElement {
 }
 
 const StyledIconContainer = styled("div")({
-	border: "1px solid #999",
 	borderRadius: ".5rem",
 	overflow: "hidden",
 });

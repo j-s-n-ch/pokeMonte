@@ -1,6 +1,6 @@
 import AddIcon from "@mui/icons-material/Add";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import {
 	Box,
 	Button,
@@ -11,20 +11,19 @@ import {
 	IconButton,
 	MenuItem,
 	Slider,
-	Tab,
 	Table,
 	TableBody,
 	TableCell,
 	TableContainer,
 	TableHead,
 	TableRow,
-	Tabs,
 	TextField,
 	Typography,
+	useTheme,
 } from "@mui/material";
 import { styled } from "@mui/system";
 import type React from "react";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import fields from "../../data/fields";
 import pokemons from "../../data/pokemons";
 import {
@@ -85,7 +84,7 @@ function HuntFinderRow({
 			>
 				<TableCell sx={{ width: "40px", padding: "6px" }}>
 					<IconButton size="small">
-						{open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+						{open ? <KeyboardArrowDownIcon /> : <KeyboardArrowRightIcon />}
 					</IconButton>
 				</TableCell>
 				<TableCell sx={{ fontWeight: "bold" }}>{row.mapName}</TableCell>
@@ -205,32 +204,345 @@ function PrioritySlider({
 	value: number;
 	onChange: (val: number) => void;
 }) {
+	const theme = useTheme();
+	const isDarkMode = theme.palette.mode === "dark";
+	const [isHovered, setIsHovered] = useState(false);
+	const [isFocused, setIsFocused] = useState(false);
+	const containerRef = useRef<HTMLDivElement>(null);
+	const trackRef = useRef<HTMLDivElement>(null);
+
+	const defaultLineColor = isDarkMode
+		? "rgba(255, 255, 255, 0.7)"
+		: "rgba(0, 0, 0, 0.42)";
+	const hoverLineColor = isDarkMode
+		? "rgba(255, 255, 255, 1)"
+		: "rgba(0, 0, 0, 0.87)";
+	const activeLineColor = theme.palette.primary.main;
+
+	const handleDrag = useCallback(
+		(clientX: number) => {
+			if (!trackRef.current) return;
+			const rect = trackRef.current.getBoundingClientRect();
+			const clickX = clientX - rect.left;
+			const width = rect.width;
+			const pct = Math.max(0, Math.min(1, clickX / width));
+			const rawVal = pct * 4 + 1;
+			const stepVal = Math.round(rawVal);
+			onChange(stepVal);
+		},
+		[onChange],
+	);
+
+	const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+		if (e.button !== 0) return;
+		e.preventDefault();
+		containerRef.current?.focus();
+		setIsFocused(true);
+		handleDrag(e.clientX);
+
+		const handleMouseMove = (moveEvent: MouseEvent) => {
+			handleDrag(moveEvent.clientX);
+		};
+
+		const handleMouseUp = () => {
+			window.removeEventListener("mousemove", handleMouseMove);
+			window.removeEventListener("mouseup", handleMouseUp);
+		};
+
+		window.addEventListener("mousemove", handleMouseMove);
+		window.addEventListener("mouseup", handleMouseUp);
+	};
+
+	const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+		e.preventDefault();
+		containerRef.current?.focus();
+		setIsFocused(true);
+		const touch = e.touches[0];
+		handleDrag(touch.clientX);
+
+		const handleTouchMove = (moveEvent: TouchEvent) => {
+			const touch = moveEvent.touches[0];
+			handleDrag(touch.clientX);
+		};
+
+		const handleTouchEnd = () => {
+			window.removeEventListener("touchmove", handleTouchMove);
+			window.removeEventListener("touchend", handleTouchEnd);
+		};
+
+		window.addEventListener("touchmove", handleTouchMove);
+		window.addEventListener("touchend", handleTouchEnd);
+	};
+
+	const handleKeyDown = (e: React.KeyboardEvent) => {
+		if (e.key === "ArrowRight" || e.key === "ArrowUp") {
+			onChange(Math.min(5, value + 1));
+			e.preventDefault();
+		} else if (e.key === "ArrowLeft" || e.key === "ArrowDown") {
+			onChange(Math.max(1, value - 1));
+			e.preventDefault();
+		}
+	};
+
+	const steps = [1, 2, 3, 4, 5];
+
 	return (
-		<Box sx={{ width: "160px", mx: "15px", display: "inline-block", mt: 1 }}>
-			<Slider
-				value={value}
-				min={1}
-				max={5}
-				step={1}
-				marks={[
-					{ value: 1, label: "1 (Low)" },
-					{ value: 5, label: "5 (High)" },
-				]}
-				onChange={(_e, val) => onChange(Number(val))}
-				valueLabelDisplay="auto"
+		<Box
+			ref={containerRef}
+			onMouseEnter={() => setIsHovered(true)}
+			onMouseLeave={() => setIsHovered(false)}
+			onFocus={() => setIsFocused(true)}
+			onBlur={() => setIsFocused(false)}
+			tabIndex={0}
+			onKeyDown={handleKeyDown}
+			sx={{
+				width: "160px",
+				ml: "32px",
+				mr: "16px",
+				display: "inline-flex",
+				flexDirection: "column",
+				verticalAlign: "middle",
+				outline: "none",
+				userSelect: "none",
+			}}
+		>
+			<Box
 				sx={{
-					"& .MuiSlider-markLabel": {
-						fontSize: "0.75rem",
-						color: "text.secondary",
-						mt: 0.5,
-					},
+					display: "flex",
+					justifyContent: "space-between",
+					mb: "2px",
+				}}
+			>
+				<Typography
+					variant="caption"
+					sx={{ color: "text.secondary", fontSize: "0.7rem", lineHeight: 1 }}
+				>
+					1 (Low)
+				</Typography>
+				<Typography
+					variant="caption"
+					sx={{ color: "text.secondary", fontSize: "0.7rem", lineHeight: 1 }}
+				>
+					5 (High)
+				</Typography>
+			</Box>
+			<Box
+				ref={trackRef}
+				onMouseDown={handleMouseDown}
+				onTouchStart={handleTouchStart}
+				sx={{
+					position: "relative",
+					height: "32px",
+					display: "flex",
+					alignItems: "center",
+					cursor: "pointer",
+				}}
+			>
+				{/* Base line */}
+				<Box
+					sx={{
+						position: "absolute",
+						bottom: 0,
+						left: 0,
+						right: 0,
+						height: "1px",
+						bgcolor: isHovered ? hoverLineColor : defaultLineColor,
+						transition:
+							"background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+					}}
+				/>
+				{/* Focus/Active line */}
+				<Box
+					sx={{
+						position: "absolute",
+						bottom: 0,
+						left: 0,
+						right: 0,
+						height: "2px",
+						bgcolor: activeLineColor,
+						transform: isFocused ? "scaleX(1)" : "scaleX(0)",
+						transformOrigin: "center",
+						transition: "transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms",
+					}}
+				/>
+				{steps.map((stepVal) => {
+					const pct = ((stepVal - 1) / 4) * 100;
+					return (
+						<Box
+							key={stepVal}
+							sx={{
+								position: "absolute",
+								bottom: 0,
+								left: `${pct}%`,
+								transform: "translate(-50%, 50%)",
+								width: "4px",
+								height: "4px",
+								borderRadius: "50%",
+								bgcolor: isDarkMode ? "#121212" : "#fff",
+								border: `1px solid ${
+									isFocused
+										? activeLineColor
+										: isHovered
+											? hoverLineColor
+											: defaultLineColor
+								}`,
+								zIndex: 1,
+								transition:
+									"border-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+							}}
+						/>
+					);
+				})}
+				<Box
+					sx={{
+						position: "absolute",
+						bottom: 0,
+						left: `${((value - 1) / 4) * 100}%`,
+						transform: "translate(-50%, 50%)",
+						width: "12px",
+						height: "12px",
+						borderRadius: "50%",
+						bgcolor: isDarkMode ? "#90caf9" : "primary.main",
+						boxShadow: isFocused
+							? `0 0 0 4px ${theme.palette.primary.main}33`
+							: "none",
+						zIndex: 2,
+						transition: "left 0.15s ease, box-shadow 0.15s",
+					}}
+				/>
+			</Box>
+		</Box>
+	);
+}
+
+function CustomSearchInput({
+	value,
+	onChange,
+	onFocus,
+	onBlur,
+	onKeyDown,
+	placeholder,
+}: {
+	value: string;
+	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+	onFocus: () => void;
+	onBlur: () => void;
+	onKeyDown: (e: React.KeyboardEvent<HTMLInputElement>) => void;
+	placeholder: string;
+}) {
+	const theme = useTheme();
+	const isDarkMode = theme.palette.mode === "dark";
+	const [isHovered, setIsHovered] = useState(false);
+	const [isFocused, setIsFocused] = useState(false);
+
+	const defaultLineColor = isDarkMode
+		? "rgba(255, 255, 255, 0.7)"
+		: "rgba(0, 0, 0, 0.42)";
+	const hoverLineColor = isDarkMode
+		? "rgba(255, 255, 255, 1)"
+		: "rgba(0, 0, 0, 0.87)";
+	const activeLineColor = theme.palette.primary.main;
+
+	return (
+		<Box
+			onMouseEnter={() => setIsHovered(true)}
+			onMouseLeave={() => setIsHovered(false)}
+			sx={{
+				position: "relative",
+				width: "200px",
+				height: "32px",
+				display: "inline-flex",
+				alignItems: "center",
+			}}
+		>
+			<input
+				type="text"
+				placeholder={placeholder}
+				value={value}
+				onChange={onChange}
+				onFocus={() => {
+					setIsFocused(true);
+					onFocus();
+				}}
+				onBlur={() => {
+					setIsFocused(false);
+					onBlur();
+				}}
+				onKeyDown={onKeyDown}
+				style={{
+					width: "100%",
+					height: "100%",
+					border: "none",
+					outline: "none",
+					background: "transparent",
+					color: isDarkMode ? "#fff" : "rgba(0, 0, 0, 0.87)",
+					fontFamily: theme.typography.fontFamily,
+					fontSize: "0.875rem",
+					padding: "4px 0",
+				}}
+			/>
+			{/* Base line */}
+			<Box
+				sx={{
+					position: "absolute",
+					bottom: 0,
+					left: 0,
+					right: 0,
+					height: "1px",
+					bgcolor: isHovered ? hoverLineColor : defaultLineColor,
+					transition: "background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+				}}
+			/>
+			{/* Focus/Active line */}
+			<Box
+				sx={{
+					position: "absolute",
+					bottom: 0,
+					left: 0,
+					right: 0,
+					height: "2px",
+					bgcolor: activeLineColor,
+					transform: isFocused ? "scaleX(1)" : "scaleX(0)",
+					transformOrigin: "center",
+					transition: "transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms",
 				}}
 			/>
 		</Box>
 	);
 }
 
-export default function EncounterSimulatorTab() {
+export default function EncounterSimulatorTab({
+	activeTab,
+}: {
+	activeTab: number;
+}) {
+	const theme = useTheme();
+	const isDarkMode = theme.palette.mode === "dark";
+	const baseColor = isDarkMode ? "255, 255, 255" : "0, 0, 0";
+	const labelBgColors: Record<number, string> = {
+		5: `rgba(${baseColor}, 0.16)`,
+		4: `rgba(${baseColor}, 0.12)`,
+		3: `rgba(${baseColor}, 0.08)`,
+		2: `rgba(${baseColor}, 0.05)`,
+		1: `rgba(${baseColor}, 0.02)`,
+	};
+
+	const primaryButtonSx = {
+		bgcolor: isDarkMode ? "rgba(255, 255, 255, 0.08)" : "rgba(0, 0, 0, 0.06)",
+		color: "primary.main",
+		fontWeight: "bold",
+		textTransform: "none",
+		boxShadow: "none",
+		"&:hover": {
+			bgcolor: isDarkMode ? "rgba(255, 255, 255, 0.15)" : "rgba(0, 0, 0, 0.12)",
+			boxShadow: "none",
+		},
+		"&.Mui-disabled": {
+			color: "action.disabled",
+			bgcolor: "action.disabledBackground",
+		},
+	};
+
 	// Standard inputs
 	const [fieldIndex, setFieldIndex] = useState<number>(() => {
 		const cached = localStorage.getItem("pokesleep_sim_fieldIndex");
@@ -299,14 +611,25 @@ export default function EncounterSimulatorTab() {
 			{ pokemon: "Pikachu", catchPriority: 3 },
 		];
 	});
-	const [selectedPokemonName, setSelectedPokemonName] = useState<string | null>(
-		null,
-	);
 	const [selectedPriority, setSelectedPriority] = useState<number>(3);
 
 	const pokemonOptions = useMemo(() => {
 		const names = pokemons.map((p) => p.name);
 		return Array.from(new Set(names)).sort();
+	}, []);
+
+	// Drag and drop tracking refs (to delete on release outside without snapback delay)
+	const draggedPokemonRef = useRef<string | null>(null);
+	const droppedInZoneRef = useRef<boolean>(false);
+
+	useEffect(() => {
+		const handleGlobalDragOver = (e: DragEvent) => {
+			e.preventDefault();
+		};
+		window.addEventListener("dragover", handleGlobalDragOver);
+		return () => {
+			window.removeEventListener("dragover", handleGlobalDragOver);
+		};
 	}, []);
 
 	// Keyboard Autocomplete and Priority Slider States
@@ -373,27 +696,23 @@ export default function EncounterSimulatorTab() {
 			}
 		} else if (e.key === "Enter") {
 			e.preventDefault();
-			if (filteredOptions.length === 1) {
-				const pokemonName = filteredOptions[0];
-				if (
-					!targets.some(
-						(t) => t.pokemon.toLowerCase() === pokemonName.toLowerCase(),
-					)
-				) {
-					setTargets((prev) => [
-						...prev,
-						{ pokemon: pokemonName, catchPriority: selectedPriority },
-					]);
-				}
-				setSearchQuery("");
-				setSelectedPokemonName(null);
-				setDropdownOpen(false);
-				setHighlightedIdx(-1);
-			} else if (filteredOptions.length > 1) {
+			if (filteredOptions.length > 0) {
 				const targetIdx = highlightedIdx !== -1 ? highlightedIdx : 0;
 				const pokemonName = filteredOptions[targetIdx];
-				setSelectedPokemonName(pokemonName);
-				setSearchQuery(pokemonName);
+				setTargets((prev) => {
+					if (
+						prev.some(
+							(t) => t.pokemon.toLowerCase() === pokemonName.toLowerCase(),
+						)
+					) {
+						return prev;
+					}
+					return [
+						...prev,
+						{ pokemon: pokemonName, catchPriority: selectedPriority },
+					];
+				});
+				setSearchQuery("");
 				setDropdownOpen(false);
 				setHighlightedIdx(-1);
 			}
@@ -404,14 +723,18 @@ export default function EncounterSimulatorTab() {
 	};
 
 	const handleSelectOption = (option: string) => {
-		setSelectedPokemonName(option);
-		setSearchQuery(option);
+		setTargets((prev) => {
+			if (prev.some((t) => t.pokemon.toLowerCase() === option.toLowerCase())) {
+				return prev;
+			}
+			return [...prev, { pokemon: option, catchPriority: selectedPriority }];
+		});
+		setSearchQuery("");
 		setDropdownOpen(false);
 		setHighlightedIdx(-1);
 	};
 
 	// Tabs state
-	const [activeTab, setActiveTab] = useState<number>(0);
 	const [targetsExpanded, setTargetsExpanded] = useState<boolean>(true);
 
 	// Outputs state
@@ -453,22 +776,40 @@ export default function EncounterSimulatorTab() {
 		}
 	}, []);
 
+	const getPokemonSleepType = useCallback((name: string) => {
+		const found = pokemons.find(
+			(p) => p.name.toLowerCase() === name.toLowerCase(),
+		);
+		return found ? found.sleepType : "dozing";
+	}, []);
+
 	const handleAddTarget = useCallback(() => {
-		if (!selectedPokemonName) return;
-		if (
-			targets.some(
-				(t) => t.pokemon.toLowerCase() === selectedPokemonName.toLowerCase(),
-			)
-		) {
-			return;
-		}
-		setTargets([
-			...targets,
-			{ pokemon: selectedPokemonName, catchPriority: selectedPriority },
-		]);
-		setSelectedPokemonName(null);
+		const queryName = searchQuery.trim();
+		if (!queryName) return;
+
+		const exactMatch = pokemonOptions.find(
+			(name) => name.toLowerCase() === queryName.toLowerCase(),
+		);
+		const pokemonName =
+			exactMatch || (filteredOptions.length > 0 ? filteredOptions[0] : null);
+
+		if (!pokemonName) return;
+
+		setTargets((prev) => {
+			if (
+				prev.some((t) => t.pokemon.toLowerCase() === pokemonName.toLowerCase())
+			) {
+				return prev;
+			}
+			return [
+				...prev,
+				{ pokemon: pokemonName, catchPriority: selectedPriority },
+			];
+		});
 		setSearchQuery("");
-	}, [selectedPokemonName, selectedPriority, targets]);
+		setDropdownOpen(false);
+		setHighlightedIdx(-1);
+	}, [searchQuery, filteredOptions, selectedPriority, pokemonOptions]);
 
 	const handleRemoveTarget = useCallback(
 		(name: string) => {
@@ -579,146 +920,133 @@ export default function EncounterSimulatorTab() {
 
 	return (
 		<StyledWrapper>
-			<StyledForm>
-				<div>Research area:</div>
-				<div>
-					<TextField
-						variant="standard"
-						select
-						value={fieldIndex}
-						onChange={(e) => setFieldIndex(Number(e.target.value))}
-					>
-						<MenuItem value={0}>🌱 Greengrass Isle</MenuItem>
-						<MenuItem value={1}>🏝️ Cyan Beach</MenuItem>
-						<MenuItem value={2}>⛰️ Taupe Hollow</MenuItem>
-						<MenuItem value={3}>⛄ Snowdrop Tundra</MenuItem>
-						<MenuItem value={4}>🚢 Lapis Lakeside</MenuItem>
-						<MenuItem value={5}>⚡️ Old Gold Power Plant</MenuItem>
-						<MenuItem value={6}>🏜️ Amber Canyon</MenuItem>
-						<MenuItem value={7}>🌱 Greengrass Isle (Expert)</MenuItem>
-					</TextField>
-				</div>
-
-				<div>Snorlax strength:</div>
-				<div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-					<TextField
-						variant="standard"
-						select
-						value={currentRank.index}
-						onChange={(e) => handleRankChange(Number(e.target.value))}
-						sx={{ width: "80px" }}
-						SelectProps={{
-							MenuProps: {
-								sx: { height: "400px" },
-								anchorOrigin: { vertical: "bottom", horizontal: "left" },
-								transformOrigin: { vertical: "top", horizontal: "left" },
-							},
-						}}
-					>
-						{rankMenuItems}
-					</TextField>
-					<TextField
-						variant="standard"
-						type="number"
-						value={snorlaxPower}
-						onChange={(e) =>
-							setSnorlaxPower(Math.max(0, Number(e.target.value)))
-						}
-						sx={{ width: "120px" }}
-					/>
-				</div>
-
-				<div>Sleep type:</div>
-				<div>
-					<TextField
-						variant="standard"
-						select
-						value={sleepType}
-						onChange={(e) =>
-							setSleepType(
-								e.target.value as "dozing" | "snoozing" | "slumbering",
-							)
-						}
-					>
-						<MenuItem value="dozing">Dozing</MenuItem>
-						<MenuItem value="snoozing">Snoozing</MenuItem>
-						<MenuItem value="slumbering">Slumbering</MenuItem>
-					</TextField>
-				</div>
-
-				<div>Event bonus:</div>
-				<div>
-					<TextField
-						variant="standard"
-						select
-						value={bonus}
-						onChange={(e) => setBonus(Number(e.target.value))}
-					>
-						<MenuItem value={1.0}>None</MenuItem>
-						<MenuItem value={1.5}>x1.5</MenuItem>
-						<MenuItem value={2.0}>x2.0</MenuItem>
-						<MenuItem value={2.5}>x2.5</MenuItem>
-						<MenuItem value={3.0}>x3.0</MenuItem>
-						<MenuItem value={4.0}>x4.0</MenuItem>
-					</TextField>
-				</div>
-
-				<div>Sleep twice a day:</div>
-				<div>
-					<FormControlLabel
-						control={
-							<Checkbox
-								checked={sleepTwice}
-								onChange={(e) => setSleepTwice(e.target.checked)}
-							/>
-						}
-						label=""
-					/>
-				</div>
-
-				{sleepTwice && (
-					<>
-						<div>First sleep score:</div>
+			{activeTab === 0 && (
+				<>
+					<StyledForm>
+						<div>Research area:</div>
 						<div>
-							<Box
-								sx={{
-									display: "flex",
-									gap: "1.5rem",
-									alignItems: "center",
-									width: "260px",
+							<TextField
+								variant="standard"
+								select
+								value={fieldIndex}
+								onChange={(e) => setFieldIndex(Number(e.target.value))}
+							>
+								<MenuItem value={0}>🌱 Greengrass Isle</MenuItem>
+								<MenuItem value={1}>🏝️ Cyan Beach</MenuItem>
+								<MenuItem value={2}>⛰️ Taupe Hollow</MenuItem>
+								<MenuItem value={3}>⛄ Snowdrop Tundra</MenuItem>
+								<MenuItem value={4}>🚢 Lapis Lakeside</MenuItem>
+								<MenuItem value={5}>⚡️ Old Gold Power Plant</MenuItem>
+								<MenuItem value={6}>🏜️ Amber Canyon</MenuItem>
+								<MenuItem value={7}>🌱 Greengrass Isle (Expert)</MenuItem>
+							</TextField>
+						</div>
+
+						<div>Snorlax strength:</div>
+						<div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+							<TextField
+								variant="standard"
+								select
+								value={currentRank.index}
+								onChange={(e) => handleRankChange(Number(e.target.value))}
+								sx={{ width: "80px" }}
+								SelectProps={{
+									MenuProps: {
+										sx: { height: "400px" },
+										anchorOrigin: { vertical: "bottom", horizontal: "left" },
+										transformOrigin: { vertical: "top", horizontal: "left" },
+									},
 								}}
 							>
-								<Slider
-									value={firstScore}
-									min={1}
-									max={99}
-									onChange={(_e, v) => setFirstScore(Number(v))}
-									sx={{ color: "#f7ac33" }}
-								/>
-								<Typography variant="body2">
-									{firstScore} / {100 - firstScore}
-								</Typography>
-							</Box>
+								{rankMenuItems}
+							</TextField>
+							<NumericInput
+								value={snorlaxPower}
+								onChange={setSnorlaxPower}
+								min={0}
+								sx={{ width: "120px" }}
+							/>
 						</div>
-					</>
-				)}
-			</StyledForm>
 
-			<Divider sx={{ my: 3 }} />
+						<div>Sleep type:</div>
+						<div>
+							<TextField
+								variant="standard"
+								select
+								value={sleepType}
+								onChange={(e) =>
+									setSleepType(
+										e.target.value as "dozing" | "snoozing" | "slumbering",
+									)
+								}
+							>
+								<MenuItem value="dozing">Dozing</MenuItem>
+								<MenuItem value="snoozing">Snoozing</MenuItem>
+								<MenuItem value="slumbering">Slumbering</MenuItem>
+							</TextField>
+						</div>
 
-			{/* Sub tabs */}
-			<Box sx={{ borderBottom: 1, borderColor: "divider", mb: 3 }}>
-				<Tabs
-					value={activeTab}
-					onChange={(_e, val) => setActiveTab(val)}
-					textColor="primary"
-					indicatorColor="primary"
-				>
-					<Tab label="Roll Sleep Session" />
-					<Tab label="Split Optimizer" />
-					<Tab label="Hunt Finder" />
-				</Tabs>
-			</Box>
+						<div>Event bonus:</div>
+						<div>
+							<TextField
+								variant="standard"
+								select
+								value={bonus}
+								onChange={(e) => setBonus(Number(e.target.value))}
+							>
+								<MenuItem value={1.0}>None</MenuItem>
+								<MenuItem value={1.5}>x1.5</MenuItem>
+								<MenuItem value={2.0}>x2.0</MenuItem>
+								<MenuItem value={2.5}>x2.5</MenuItem>
+								<MenuItem value={3.0}>x3.0</MenuItem>
+								<MenuItem value={4.0}>x4.0</MenuItem>
+							</TextField>
+						</div>
+
+						<div>Sleep twice a day:</div>
+						<div>
+							<FormControlLabel
+								control={
+									<Checkbox
+										checked={sleepTwice}
+										onChange={(e) => setSleepTwice(e.target.checked)}
+									/>
+								}
+								label=""
+							/>
+						</div>
+
+						{sleepTwice && (
+							<>
+								<div>First sleep score:</div>
+								<div>
+									<Box
+										sx={{
+											display: "flex",
+											gap: "1.5rem",
+											alignItems: "center",
+											width: "260px",
+										}}
+									>
+										<Slider
+											value={firstScore}
+											min={1}
+											max={99}
+											onChange={(_e, v) => setFirstScore(Number(v))}
+											sx={{ color: "#f7ac33" }}
+										/>
+										<Typography variant="body2">
+											{firstScore} / {100 - firstScore}
+										</Typography>
+									</Box>
+								</div>
+							</>
+						)}
+					</StyledForm>
+
+					<Divider sx={{ my: 3 }} />
+				</>
+			)}
 
 			{/* Collapsible Target priorities section, only for tabs !== 0 */}
 			{activeTab !== 0 && (
@@ -729,9 +1057,9 @@ export default function EncounterSimulatorTab() {
 						onClick={() => setTargetsExpanded(!targetsExpanded)}
 						startIcon={
 							targetsExpanded ? (
-								<KeyboardArrowUpIcon />
-							) : (
 								<KeyboardArrowDownIcon />
+							) : (
+								<KeyboardArrowRightIcon />
 							)
 						}
 						sx={{
@@ -755,13 +1083,12 @@ export default function EncounterSimulatorTab() {
 									gap: 1.5,
 									mb: 2,
 									flexWrap: "wrap",
-									alignItems: "center",
+									alignItems: "flex-end",
 								}}
 							>
 								{/* Custom Search Autocomplete */}
 								<Box sx={{ position: "relative", width: "200px" }}>
-									<TextField
-										variant="standard"
+									<CustomSearchInput
 										placeholder="Pokemon..."
 										value={searchQuery}
 										onChange={(e) => {
@@ -777,7 +1104,6 @@ export default function EncounterSimulatorTab() {
 											}, 150);
 										}}
 										onKeyDown={handleInputKeyDown}
-										fullWidth
 									/>
 									{dropdownOpen && filteredOptions.length > 0 && (
 										<Box
@@ -837,16 +1163,49 @@ export default function EncounterSimulatorTab() {
 
 								<Button
 									variant="contained"
-									color="primary"
 									size="small"
 									onClick={handleAddTarget}
-									sx={{ minWidth: "40px", height: "30px", ml: 2 }}
+									sx={{
+										...primaryButtonSx,
+										minWidth: "40px",
+										height: "30px",
+										ml: 2,
+									}}
 								>
 									<AddIcon fontSize="small" />
 								</Button>
 							</Box>
 
 							{/* Targets Priority Tier List */}
+							{/* Columns Headers */}
+							<Box
+								sx={{
+									display: "grid",
+									gridTemplateColumns: "50px 1fr 1fr 1fr",
+									gap: "0.5rem",
+									mb: "0.25rem",
+									alignItems: "center",
+								}}
+							>
+								<Box sx={{ width: "50px" }} />
+								{(["dozing", "snoozing", "slumbering"] as const).map((type) => (
+									<Typography
+										key={type}
+										variant="caption"
+										sx={{
+											fontSize: "0.75rem",
+											fontWeight: "bold",
+											color: "text.secondary",
+											textTransform: "uppercase",
+											userSelect: "none",
+											pl: "0.5rem",
+										}}
+									>
+										{type}
+									</Typography>
+								))}
+							</Box>
+
 							<Box
 								sx={{
 									display: "flex",
@@ -863,31 +1222,17 @@ export default function EncounterSimulatorTab() {
 									return (
 										<Box
 											key={tier}
-											onDragOver={(e) => {
-												e.preventDefault();
-												e.dataTransfer.dropEffect = "move";
-											}}
-											onDrop={(e) => {
-												const pokemonName =
-													e.dataTransfer.getData("pokemonName");
-												if (pokemonName) {
-													setTargets((prev) =>
-														prev.map((t) =>
-															t.pokemon === pokemonName
-																? { ...t, catchPriority: tier }
-																: t,
-														),
-													);
-												}
-											}}
 											sx={{
-												display: "flex",
+												display: "grid",
+												gridTemplateColumns: "50px 1fr 1fr 1fr",
+												gap: "0.5rem",
 												alignItems: "stretch",
-												borderRadius: "6px",
-												overflow: "hidden",
 												background: "transparent",
-												border: "1px solid",
-												borderColor: "divider",
+												borderRadius: "6px",
+												bgcolor: isDarkMode
+													? "rgba(255, 255, 255, 0.02)"
+													: "rgba(0, 0, 0, 0.01)",
+												overflow: "hidden",
 											}}
 										>
 											{/* Label */}
@@ -901,104 +1246,132 @@ export default function EncounterSimulatorTab() {
 													fontSize: "1rem",
 													color: "text.primary",
 													textAlign: "center",
-													p: "0.5rem",
-													bgcolor: "action.hover",
-													borderRight: "1px solid",
-													borderColor: "divider",
+													bgcolor: labelBgColors[tier],
 													userSelect: "none",
 												}}
 											>
 												{tier}
 											</Box>
-											{/* Drop Zone */}
-											<Box
-												sx={{
-													flexGrow: 1,
-													display: "flex",
-													gap: "1rem",
-													p: "0.5rem 1rem",
-													flexWrap: "wrap",
-													alignItems: "center",
-													minHeight: "56px",
-												}}
-											>
-												{tierTargets.length > 0 ? (
-													tierTargets.map((t) => (
+
+											{/* Columns */}
+											{(["dozing", "snoozing", "slumbering"] as const).map(
+												(type, idx) => {
+													const typeTargets = tierTargets.filter(
+														(t) => getPokemonSleepType(t.pokemon) === type,
+													);
+													return (
 														<Box
-															key={t.pokemon}
-															draggable
-															onDragStart={(e) => {
-																e.dataTransfer.setData(
-																	"pokemonName",
-																	t.pokemon,
-																);
-																e.dataTransfer.effectAllowed = "move";
+															key={type}
+															onDragOver={(e) => {
+																e.preventDefault();
+																e.dataTransfer.dropEffect = "move";
 															}}
-															onDragEnd={(e) => {
-																if (e.dataTransfer.dropEffect === "none") {
-																	handleRemoveTarget(t.pokemon);
+															onDrop={(e) => {
+																droppedInZoneRef.current = true;
+																const pokemonName =
+																	e.dataTransfer.getData("pokemonName");
+																if (pokemonName) {
+																	setTargets((prev) =>
+																		prev.map((t) =>
+																			t.pokemon === pokemonName
+																				? { ...t, catchPriority: tier }
+																				: t,
+																		),
+																	);
 																}
 															}}
 															sx={{
-																position: "relative",
-																cursor: "grab",
-																"&:active": { cursor: "grabbing" },
-																"&:hover .delete-badge": { opacity: 1 },
+																display: "flex",
+																gap: "0.5rem 0.75rem",
+																p: "0.5rem",
+																flexWrap: "wrap",
+																alignItems: "center",
+																justifyContent: "flex-start",
+																minHeight: "56px",
+																borderRight: idx < 2 ? "1px solid" : "none",
+																borderColor: "divider",
 															}}
 														>
-															<PokemonIcon
-																idForm={getPokemonIdForm(t.pokemon)}
-																size={40}
-															/>
-															{/* absolute hover delete badge */}
-															<Box
-																className="delete-badge"
-																onClick={(e) => {
-																	e.stopPropagation();
-																	handleRemoveTarget(t.pokemon);
-																}}
-																sx={{
-																	position: "absolute",
-																	top: "-4px",
-																	right: "-4px",
-																	width: "16px",
-																	height: "16px",
-																	borderRadius: "50%",
-																	bgcolor: "#ff4b4b",
-																	color: "#fff",
-																	display: "flex",
-																	alignItems: "center",
-																	justifyContent: "center",
-																	fontSize: "11px",
-																	fontWeight: "bold",
-																	cursor: "pointer",
-																	boxShadow: "0px 1px 2px rgba(0,0,0,0.5)",
-																	userSelect: "none",
-																	opacity: 0,
-																	transition: "opacity 0.15s ease",
-																	zIndex: 2,
-																	"&:hover": {
-																		bgcolor: "#ff1a1a",
-																	},
-																}}
-															>
-																×
-															</Box>
+															{typeTargets.map((t) => (
+																<Box
+																	key={t.pokemon}
+																	draggable
+																	onDragStart={(e) => {
+																		draggedPokemonRef.current = t.pokemon;
+																		droppedInZoneRef.current = false;
+																		e.dataTransfer.setData(
+																			"pokemonName",
+																			t.pokemon,
+																		);
+																		e.dataTransfer.effectAllowed = "move";
+																	}}
+																	onDragEnd={(e) => {
+																		if (
+																			!droppedInZoneRef.current &&
+																			draggedPokemonRef.current &&
+																			e.dataTransfer.dropEffect !== "none"
+																		) {
+																			handleRemoveTarget(
+																				draggedPokemonRef.current,
+																			);
+																		}
+																		draggedPokemonRef.current = null;
+																	}}
+																	sx={{
+																		position: "relative",
+																		cursor: "grab",
+																		"&:active": {
+																			cursor: "grabbing",
+																		},
+																		"&:hover .delete-badge": {
+																			opacity: 1,
+																		},
+																	}}
+																>
+																	<PokemonIcon
+																		idForm={getPokemonIdForm(t.pokemon)}
+																		size={48}
+																	/>
+																	{/* absolute hover delete badge */}
+																	<Box
+																		className="delete-badge"
+																		onClick={(e) => {
+																			e.stopPropagation();
+																			handleRemoveTarget(t.pokemon);
+																		}}
+																		sx={{
+																			position: "absolute",
+																			top: "-4px",
+																			right: "-4px",
+																			width: "16px",
+																			height: "16px",
+																			borderRadius: "50%",
+																			bgcolor: "#ff4b4b",
+																			color: "#fff",
+																			display: "flex",
+																			alignItems: "center",
+																			justifyContent: "center",
+																			fontSize: "11px",
+																			fontWeight: "bold",
+																			cursor: "pointer",
+																			boxShadow: "0px 1px 2px rgba(0,0,0,0.5)",
+																			userSelect: "none",
+																			opacity: 0,
+																			transition: "opacity 0.15s ease",
+																			zIndex: 2,
+																			"&:hover": {
+																				bgcolor: "#ff1a1a",
+																			},
+																		}}
+																	>
+																		×
+																	</Box>
+																</Box>
+															))}
 														</Box>
-													))
-												) : (
-													<Typography
-														variant="body2"
-														sx={{
-															color: "text.secondary",
-															fontStyle: "italic",
-															userSelect: "none",
-														}}
-													>
-														Drag & drop target here
-													</Typography>
-												)}
-											</Box>
+													);
+												},
+											)}
 										</Box>
 									);
 								})}
@@ -1013,10 +1386,12 @@ export default function EncounterSimulatorTab() {
 				<Box>
 					<Button
 						variant="contained"
-						color="primary"
 						onClick={handleRunRollSession}
 						disabled={isSimulating}
-						sx={{ mb: 3 }}
+						sx={{
+							...primaryButtonSx,
+							mb: 3,
+						}}
 					>
 						Roll Sleep Session
 					</Button>
@@ -1175,10 +1550,12 @@ export default function EncounterSimulatorTab() {
 				<Box>
 					<Button
 						variant="contained"
-						color="primary"
 						onClick={handleRunSplitOptimizer}
 						disabled={isSimulating}
-						sx={{ mb: 3 }}
+						sx={{
+							...primaryButtonSx,
+							mb: 3,
+						}}
 					>
 						{isSimulating ? "Optimizing..." : "Optimize Split"}
 					</Button>
@@ -1296,9 +1673,9 @@ export default function EncounterSimulatorTab() {
 							</Box>
 							<Button
 								variant="contained"
-								color="primary"
 								onClick={handleRunHuntFinder}
 								disabled={isSimulating}
+								sx={primaryButtonSx}
 							>
 								{isSimulating ? "Finding..." : "Find Hunts"}
 							</Button>
