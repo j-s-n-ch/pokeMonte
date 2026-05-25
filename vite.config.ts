@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 import { configDefaults } from "vitest/config";
 
 export default defineConfig({
-	base: "/pokesleep-tool/",
+	base: "/pokeMonte/",
 	plugins: [react()],
 	build: {
 		rollupOptions: {

@@ -1,17 +1,17 @@
 import { styled } from "@mui/system";
 import React from "react";
 import PokemonIv from "../../util/PokemonIv";
-import { AppConfigContext } from "../AppConfig";
+import { AppConfigContext, BASE_URL } from "../AppConfig";
 import PokemonIconData from "./PokemonIconData";
 
 const PokemonIcon = React.memo(
 	({
 		idForm,
-		shiny,
+		shiny = false,
 		size,
 	}: {
 		idForm: number;
-		shiny: boolean;
+		shiny?: boolean;
 		size: number;
 	}) => {
 		const appConfig = React.useContext(AppConfigContext);
@@ -23,7 +23,7 @@ const PokemonIcon = React.memo(
 		}, [idForm]);
 
 		if (!imgError && !appConfig.iconUrl) {
-			const localUrl = `/pokesleep-tool/images/pokemon/icons/${idForm}.webp`;
+			const localUrl = `${BASE_URL}images/pokemon/icons/${idForm}.webp`;
 			return (
 				<StyledIconContainer
 					style={{ width: `${size}px`, height: `${size}px` }}

@@ -3,7 +3,12 @@ import { createTheme, ThemeProvider } from "@mui/material";
 import { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type AppConfig from "./AppConfig";
-import { AppConfigContext, type AppType, saveConfig } from "./AppConfig";
+import {
+	AppConfigContext,
+	type AppType,
+	BASE_URL,
+	saveConfig,
+} from "./AppConfig";
 import IvCalcApp from "./IvCalc/IvCalcApp";
 import NewsInfo from "./NewsInfo";
 import PwaNotify from "./PwaBanner";
@@ -120,7 +125,7 @@ function useMultilingual(config: AppConfig) {
  */
 function useRouter(language: string): [AppType, (v: AppType) => void] {
 	const initialApp: AppType = window.location.pathname.startsWith(
-		"/pokesleep-tool/iv/",
+		`${BASE_URL}iv/`,
 	)
 		? "IvCalc"
 		: "ResearchCalc";
@@ -167,7 +172,7 @@ function useRouter(language: string): [AppType, (v: AppType) => void] {
 		}
 
 		// update URL
-		let url = `${document.location.origin}/pokesleep-tool/`;
+		let url = `${document.location.origin}${BASE_URL}`;
 		if (currentApp === "IvCalc") {
 			url += "iv/";
 		}

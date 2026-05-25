@@ -63,3 +63,5 @@ export function loadConfig(language: string): AppConfig {
 export function saveConfig(state: AppConfig) {
 	localStorage.setItem("PokeSleepTool", JSON.stringify(state));
 }
+
+export const BASE_URL = "/pokeMonte/";

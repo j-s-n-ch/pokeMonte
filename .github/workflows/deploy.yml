@@ -15,7 +15,6 @@ on:
 
 jobs:
   build:
-    if: github.repository_owner == 'nitoyon'
     runs-on: ubuntu-latest
     permissions:
       contents: write

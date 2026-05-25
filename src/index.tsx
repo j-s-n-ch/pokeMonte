@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import i18n, { loadLanguage } from "./i18n";
 import App from "./ui/App";
-import { loadConfig, saveConfig } from "./ui/AppConfig";
+import { BASE_URL, loadConfig, saveConfig } from "./ui/AppConfig";
 
 (async () => {
 	// add error handler
@@ -66,7 +66,7 @@ import { loadConfig, saveConfig } from "./ui/AppConfig";
 
 	window.addEventListener("load", () => {
 		if ("serviceWorker" in navigator) {
-			navigator.serviceWorker.register("/pokesleep-tool/sw.js");
+			navigator.serviceWorker.register(`${BASE_URL}sw.js`);
 		}
 	});
 })();
