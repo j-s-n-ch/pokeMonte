@@ -578,3 +578,114 @@ export function findBestMapAndType(
 
 	return results;
 }
+
+export interface SingleSessionOptimizeResult {
+	score: number;
+	drowsyPower: number;
+	expectedTargetCount: number;
+	expectedTotalValue: number;
+}
+
+export function optimizeSingleSessionScore(
+	fieldIndex: number,
+	sleepType: SleepType,
+	snorlaxPower: number,
+	targets: TargetPokemon[],
+	iterations: number,
+): SingleSessionOptimizeResult {
+	let bestResult: SingleSessionOptimizeResult = {
+		score: 100,
+		drowsyPower: snorlaxPower * 100,
+		expectedTargetCount: 0,
+		expectedTotalValue: 0,
+	};
+
+	// Scan scores in steps of 5 from 100 down to 10
+	const scoresToScan = [
+		100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10,
+	];
+	let bestScore = 100;
+	let maxVal = -1;
+
+	for (const score of scoresToScan) {
+		const res = runBatchSimulations(
+			{
+				fieldIndex,
+				sleepType,
+				snorlaxPower,
+				sleepScore: score,
+			},
+			iterations,
+			targets,
+		);
+
+		let targetCount = 0;
+		for (const key in res.targetFrequency) {
+			const pokemonName = key.substring(0, key.lastIndexOf(" "));
+			if (
+				targets.some(
+					(t) => t.pokemon.toLowerCase() === pokemonName.toLowerCase(),
+				)
+			) {
+				targetCount += res.targetFrequency[key];
+			}
+		}
+		const expectedTargetCount = targetCount / iterations;
+		const expectedTotalValue = res.expectedTotalCatchValue;
+
+		if (expectedTotalValue > maxVal) {
+			maxVal = expectedTotalValue;
+			bestScore = score;
+			bestResult = {
+				score,
+				drowsyPower: snorlaxPower * score,
+				expectedTargetCount,
+				expectedTotalValue,
+			};
+		}
+	}
+
+	// Refine around the best score in 1% steps
+	const startScore = Math.max(1, bestScore - 4);
+	const endScore = Math.min(100, bestScore + 4);
+	for (let score = startScore; score <= endScore; score++) {
+		if (scoresToScan.includes(score)) continue; // Already simulated
+
+		const res = runBatchSimulations(
+			{
+				fieldIndex,
+				sleepType,
+				snorlaxPower,
+				sleepScore: score,
+			},
+			iterations,
+			targets,
+		);
+
+		let targetCount = 0;
+		for (const key in res.targetFrequency) {
+			const pokemonName = key.substring(0, key.lastIndexOf(" "));
+			if (
+				targets.some(
+					(t) => t.pokemon.toLowerCase() === pokemonName.toLowerCase(),
+				)
+			) {
+				targetCount += res.targetFrequency[key];
+			}
+		}
+		const expectedTargetCount = targetCount / iterations;
+		const expectedTotalValue = res.expectedTotalCatchValue;
+
+		if (expectedTotalValue > maxVal) {
+			maxVal = expectedTotalValue;
+			bestResult = {
+				score,
+				drowsyPower: snorlaxPower * score,
+				expectedTargetCount,
+				expectedTotalValue,
+			};
+		}
+	}
+
+	return bestResult;
+}

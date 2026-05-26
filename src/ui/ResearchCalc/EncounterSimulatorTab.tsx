@@ -34,7 +34,9 @@ import {
 	type DailyBreakdown,
 	findBestMapAndType,
 	type MapTargetSummary,
+	optimizeSingleSessionScore,
 	optimizeSleepSplit,
+	type SingleSessionOptimizeResult,
 	type SplitOptimizeSummary,
 	type TargetPokemon,
 	type TargetStyleBreakdown,
@@ -747,6 +749,8 @@ export default function EncounterSimulatorTab({
 	const [splitResults, setSplitResults] = useState<
 		SplitOptimizeSummary[] | null
 	>(null);
+	const [singleSessionOptimal, setSingleSessionOptimal] =
+		useState<SingleSessionOptimizeResult | null>(null);
 	const [mapResults, setMapResults] = useState<MapTargetSummary[] | null>(null);
 
 	const [isSimulating, setIsSimulating] = useState<boolean>(false);
@@ -895,6 +899,15 @@ export default function EncounterSimulatorTab({
 					10000,
 				);
 				setSplitResults(res);
+
+				const singleRes = optimizeSingleSessionScore(
+					fieldIndex,
+					sleepType,
+					snorlaxPower * bonus,
+					targets,
+					10000,
+				);
+				setSingleSessionOptimal(singleRes);
 			} catch (e) {
 				console.error(e);
 			}
@@ -920,7 +933,7 @@ export default function EncounterSimulatorTab({
 
 	return (
 		<StyledWrapper>
-			{activeTab === 0 && (
+			{(activeTab === 0 || activeTab === 1) && (
 				<>
 					<StyledForm>
 						<div>Research area:</div>
@@ -1003,43 +1016,47 @@ export default function EncounterSimulatorTab({
 							</TextField>
 						</div>
 
-						<div>Sleep twice a day:</div>
-						<div>
-							<FormControlLabel
-								control={
-									<Checkbox
-										checked={sleepTwice}
-										onChange={(e) => setSleepTwice(e.target.checked)}
-									/>
-								}
-								label=""
-							/>
-						</div>
-
-						{sleepTwice && (
+						{activeTab === 0 && (
 							<>
-								<div>First sleep score:</div>
+								<div>Sleep twice a day:</div>
 								<div>
-									<Box
-										sx={{
-											display: "flex",
-											gap: "1.5rem",
-											alignItems: "center",
-											width: "260px",
-										}}
-									>
-										<Slider
-											value={firstScore}
-											min={1}
-											max={99}
-											onChange={(_e, v) => setFirstScore(Number(v))}
-											sx={{ color: "#f7ac33" }}
-										/>
-										<Typography variant="body2">
-											{firstScore} / {100 - firstScore}
-										</Typography>
-									</Box>
+									<FormControlLabel
+										control={
+											<Checkbox
+												checked={sleepTwice}
+												onChange={(e) => setSleepTwice(e.target.checked)}
+											/>
+										}
+										label=""
+									/>
 								</div>
+
+								{sleepTwice && (
+									<>
+										<div>First sleep score:</div>
+										<div>
+											<Box
+												sx={{
+													display: "flex",
+													gap: "1.5rem",
+													alignItems: "center",
+													width: "260px",
+												}}
+											>
+												<Slider
+													value={firstScore}
+													min={1}
+													max={99}
+													onChange={(_e, v) => setFirstScore(Number(v))}
+													sx={{ color: "#f7ac33" }}
+												/>
+												<Typography variant="body2">
+													{firstScore} / {100 - firstScore}
+												</Typography>
+											</Box>
+										</div>
+									</>
+								)}
 							</>
 						)}
 					</StyledForm>
@@ -1559,6 +1576,54 @@ export default function EncounterSimulatorTab({
 					>
 						{isSimulating ? "Optimizing..." : "Optimize Split"}
 					</Button>
+
+					{singleSessionOptimal && (
+						<Box
+							sx={{
+								mb: 3,
+								p: "1rem 1.5rem",
+								borderRadius: "6px",
+								bgcolor: isDarkMode
+									? "rgba(144, 202, 249, 0.08)"
+									: "rgba(25, 118, 210, 0.04)",
+								border: "1px solid",
+								borderColor: isDarkMode
+									? "rgba(144, 202, 249, 0.2)"
+									: "rgba(25, 118, 210, 0.1)",
+							}}
+						>
+							<Typography
+								variant="subtitle1"
+								sx={{ fontWeight: "bold", mb: 1, color: "primary.main" }}
+							>
+								Optimal Single Sleep Session
+							</Typography>
+							<Typography variant="body2" sx={{ color: "text.primary" }}>
+								For a single sleep session, the optimal Drowsy Power is{" "}
+								<strong>
+									{Math.round(
+										singleSessionOptimal.drowsyPower,
+									).toLocaleString()}
+								</strong>{" "}
+								(corresponding to a Sleep Score of{" "}
+								<strong>{singleSessionOptimal.score}</strong>).
+							</Typography>
+							<Typography
+								variant="body2"
+								sx={{ color: "text.secondary", mt: 0.5 }}
+							>
+								Expected target encounters:{" "}
+								<strong>
+									{singleSessionOptimal.expectedTargetCount.toFixed(3)}
+								</strong>{" "}
+								| Expected target value:{" "}
+								<strong>
+									{singleSessionOptimal.expectedTotalValue.toFixed(2)}
+								</strong>
+								.
+							</Typography>
+						</Box>
+					)}
 
 					{splitResults && (
 						<TableContainer component={Box}>
